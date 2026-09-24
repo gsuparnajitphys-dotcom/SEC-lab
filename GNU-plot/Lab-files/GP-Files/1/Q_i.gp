@@ -7,6 +7,8 @@ set grid
 set xrange [-10:10]
 set yrange [-10000:10000]
 
+set xzeroaxis linestyle 1 lc "black"
+set yzeroaxis linestyle 1 lc "black"
 
 set xtics 2
 
