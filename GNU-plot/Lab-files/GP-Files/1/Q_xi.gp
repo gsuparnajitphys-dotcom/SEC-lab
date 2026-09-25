@@ -1,5 +1,5 @@
 set terminal svg background "white"
-set ou "/workspaces/SEC-lab/GNU-plot/Lab-files/Output/1/Q_xi_ou.svg"
+set ou "C:/Users/Suparnajit2005/Documents/GitHub/SEC-lab/GNU-plot/Lab-files/Output/1/Q_xi_ou.svg"
 
 set grid
 
