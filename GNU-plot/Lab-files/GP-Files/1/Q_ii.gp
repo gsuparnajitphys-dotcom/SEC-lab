@@ -1,3 +1,4 @@
+reset
 set terminal svg
 
 set ou "C:/Users/Suparnajit2005/Documents/GitHub/SEC-lab/GNU-plot/Lab-files/Output/1/Q_ii_ou.svg"
@@ -19,4 +20,4 @@ y(x)=(x**2)*sin(x)
 
 
 
-plot y(x)
+plot y(x) lc "#3b6d54" lw 2

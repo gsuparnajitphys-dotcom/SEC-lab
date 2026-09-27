@@ -1,3 +1,4 @@
+reset
 set terminal svg background "white"
 
 set ou "C:/Users/Suparnajit2005/Documents/GitHub/SEC-lab/GNU-plot/Lab-files/Output/1/Q_i_ou.svg"
@@ -19,4 +20,4 @@ set ylabel "new function"
 
 f(x)=x**5 + 2*x**2 + 6
 
-plot f(x)
+plot f(x) lc "#9a031e" lw 2

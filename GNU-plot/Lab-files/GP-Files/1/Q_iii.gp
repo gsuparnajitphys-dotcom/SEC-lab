@@ -1,3 +1,4 @@
+reset
 set terminal svg background "white"
 set ou "C:/Users/Suparnajit2005/Documents/GitHub/SEC-lab/GNU-plot/Lab-files/Output/1/Q_iii_ou.svg"
 
@@ -13,4 +14,4 @@ set xlabel "x values"
 set ylabel "standing wave"
 
 
-plot sin(x) lc "orchid4",2*sin(-x)
+plot sin(x) lc "orchid4" lw 2,2*sin(-x) lw 2

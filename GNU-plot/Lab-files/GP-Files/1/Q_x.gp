@@ -1,3 +1,4 @@
+reset
 set terminal svg background "white"
 set ou "/workspaces/SEC-lab/GNU-plot/Lab-files/Output/1/Q_x_ou.svg"
 

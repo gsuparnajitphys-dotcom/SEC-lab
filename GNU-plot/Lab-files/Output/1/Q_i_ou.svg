@@ -39,7 +39,7 @@
 	  <feComposite in='SourceGraphic' in2='grey' operator='atop'/>
 	</filter>
 </defs>
-<g fill="none" color="#FFFFFF" stroke="black" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+<g fill="none" color="#FFFFFF" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
@@ -260,13 +260,15 @@
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 	<g id="gnuplot_plot_1" ><title>f(x)</title>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
+<g fill="none" color="#FFFFFF" stroke="black" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
+</g>
+<g fill="none" color="black" stroke="currentColor" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g transform="translate(507.09,39.91)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="end">
 		<text>f(x)</text>
 	</g>
 </g>
-<g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='rgb(148,   0, 211)'  d='M515.48,36.01 L558.04,36.01 M178.68,422.40 L182.49,398.12 L187.39,370.65 L192.30,346.67 L197.20,325.84 L202.11,307.84
+<g fill="none" color="black" stroke="currentColor" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
+	<path stroke='rgb(154,   3,  30)'  d='M515.48,36.01 L558.04,36.01 M178.68,422.40 L182.49,398.12 L187.39,370.65 L192.30,346.67 L197.20,325.84 L202.11,307.84
 		L207.01,292.37 L211.91,279.15 L216.82,267.93 L221.72,258.48 L226.63,250.58 L231.53,244.02 L236.43,238.64 L241.34,234.26
 		L246.24,230.75 L251.15,227.96 L256.05,225.77 L260.95,224.10 L265.86,222.83 L270.76,221.90 L275.67,221.23 L280.57,220.77
 		L285.48,220.46 L290.38,220.27 L295.28,220.15 L300.19,220.09 L305.09,220.07 L310.00,220.06 L314.90,220.07 L319.80,220.07
@@ -276,8 +278,6 @@
 		L442.41,180.01 L447.31,170.41 L452.22,159.03 L457.12,145.65 L462.02,130.01 L466.93,111.83 L471.83,90.81 L476.74,66.64
 		L481.64,38.97 L484.90,18.01  '/></g>
 	</g>
-<g fill="none" color="#FFFFFF" stroke="rgb(148,   0, 211)" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
-</g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="black" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
