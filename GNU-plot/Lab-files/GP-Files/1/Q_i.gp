@@ -1,7 +1,7 @@
 reset
-set terminal svg background "white"
+set terminal png 
 
-set ou "C:/Users/Suparnajit2005/Documents/GitHub/SEC-lab/GNU-plot/Lab-files/Output/1/Q_i_ou.svg"
+set ou "C:/Users/Suparnajit2005/Documents/GitHub/SEC-lab/GNU-plot/Lab-files/Output/1/Q_i_ou.png"
 
 set grid
 
