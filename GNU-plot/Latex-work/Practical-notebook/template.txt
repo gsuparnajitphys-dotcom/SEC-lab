@@ -1,0 +1,29 @@
+\newpage
+\section*{Question <QUESTION_NUMBER>}
+\addcontentsline{toc}{section}{Question <QUESTION_NUMBER>}
+
+% --- Problem Statement ---
+<PROBLEM_STATEMENT_TEXT>
+\[
+<MATHEMATICAL_EQUATIONS>
+\]
+
+\newline
+\noindent \textbf{Sol:} The GNU-Plot code for the solution of this problem is given below.
+\newline
+
+% --- GNUPLOT Code Area (Blank) ---
+\begin{lstlisting}[language=gnuplot]
+
+\end{lstlisting}
+
+\vspace{10 pt}
+
+\noindent The output plot is given in the figure below.
+
+% --- Output Plot ---
+\begin{figure}[htbp]
+    \centering
+    \includesvg[width=0.8\textwidth]{<OUTPUT_FILE_PATH>.svg} 
+    \caption{$<CAPTION_MATH_OR_TEXT>$}
+\end{figure}

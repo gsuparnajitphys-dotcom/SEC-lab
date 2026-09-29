@@ -1,0 +1,101 @@
+%% Creator: Inkscape 1.4.3 (0d15f75042, 2025-12-25), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'Q_xiv_ou_svg-tex.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{450bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.8)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{Q_xiv_ou_svg-tex.pdf}}%
+    \put(0.1069,0.0535){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}-2.5\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{Q_xiv_ou_svg-tex.pdf}}%
+    \put(0.1069,0.1245){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}-2\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{Q_xiv_ou_svg-tex.pdf}}%
+    \put(0.1069,0.1955){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}-1.5\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{Q_xiv_ou_svg-tex.pdf}}%
+    \put(0.1069,0.2665){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}-1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{Q_xiv_ou_svg-tex.pdf}}%
+    \put(0.1069,0.3375){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}-0.5\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{Q_xiv_ou_svg-tex.pdf}}%
+    \put(0.1069,0.4085){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{Q_xiv_ou_svg-tex.pdf}}%
+    \put(0.1069,0.47948333){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0.5\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{Q_xiv_ou_svg-tex.pdf}}%
+    \put(0.1069,0.55048333){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{Q_xiv_ou_svg-tex.pdf}}%
+    \put(0.1069,0.62148333){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}1.5\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{Q_xiv_ou_svg-tex.pdf}}%
+    \put(0.1069,0.69248333){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}2\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{Q_xiv_ou_svg-tex.pdf}}%
+    \put(0.1069,0.76348333){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}2.5\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{Q_xiv_ou_svg-tex.pdf}}%
+    \put(0.12088333,0.0235){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}-3\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{Q_xiv_ou_svg-tex.pdf}}%
+    \put(0.26041667,0.0235){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}-2\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{Q_xiv_ou_svg-tex.pdf}}%
+    \put(0.39993333,0.0235){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}-1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=15]{Q_xiv_ou_svg-tex.pdf}}%
+    \put(0.53946667,0.0235){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=16]{Q_xiv_ou_svg-tex.pdf}}%
+    \put(0.67898333,0.0235){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=17]{Q_xiv_ou_svg-tex.pdf}}%
+    \put(0.81851667,0.0235){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=18]{Q_xiv_ou_svg-tex.pdf}}%
+    \put(0.95803333,0.0235){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}3\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=19]{Q_xiv_ou_svg-tex.pdf}}%
+    \put(0.84515,0.73348333){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}f1(x)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=20]{Q_xiv_ou_svg-tex.pdf}}%
+    \put(0.84515,0.70348333){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}f2(x)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=21]{Q_xiv_ou_svg-tex.pdf}}%
+    \put(0.84515,0.67348333){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}f3(x)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=22]{Q_xiv_ou_svg-tex.pdf}}%
+    \put(0.03196667,0.41498333){\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Piecewise continuous function\end{tabular}}}}}%
+  \end{picture}%
+\endgroup%
