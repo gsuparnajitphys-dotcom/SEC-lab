@@ -1,7 +1,7 @@
 # Fdb version 4
-["pdflatex"] 1790707888.75614 "/home/suparnajit2005/GitHub/SEC-lab/GNU-plot/Latex-work/Practical-notebook/Lab_nb.tex" "Lab_nb.pdf" "Lab_nb" 1790707889.85678 0
+["pdflatex"] 1790708542.76419 "/home/suparnajit2005/GitHub/SEC-lab/GNU-plot/Latex-work/Practical-notebook/Lab_nb.tex" "Lab_nb.pdf" "Lab_nb" 1790708543.5523 0
   "/etc/texmf/web2c/texmf.cnf" 1789964256.52617 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/suparnajit2005/GitHub/SEC-lab/GNU-plot/Latex-work/Practical-notebook/Lab_nb.tex" 1790707888.6217 2561 f2f10a583e346558e6411f3c2cd78c72 ""
+  "/home/suparnajit2005/GitHub/SEC-lab/GNU-plot/Latex-work/Practical-notebook/Lab_nb.tex" 1790708542.46982 2562 d171b55b42455b3c98da29c8017d52d4 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -91,9 +91,9 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1769369718 41603 27f93b3067076450172040dcd57ca8b3 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1790597228 5541477 3118940318599480888143717dd32d64 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1790597379 3640624 c9ead9e94d60905d2342c36d2dc746f0 ""
-  "Lab_nb.aux" 1790707889.72921 209 d353463dcfeb363a14c6388308bf8a92 "pdflatex"
-  "Lab_nb.tex" 1790707888.6217 2561 f2f10a583e346558e6411f3c2cd78c72 ""
-  "Lab_nb.toc" 1790707889.7299 42 caa6137045fab0e611afb1e4182e7453 "pdflatex"
+  "Lab_nb.aux" 1790708543.49382 209 d353463dcfeb363a14c6388308bf8a92 "pdflatex"
+  "Lab_nb.tex" 1790708542.46982 2562 d171b55b42455b3c98da29c8017d52d4 ""
+  "Lab_nb.toc" 1790708543.49382 42 caa6137045fab0e611afb1e4182e7453 "pdflatex"
   (generated)
   "Lab_nb.aux"
   "Lab_nb.log"

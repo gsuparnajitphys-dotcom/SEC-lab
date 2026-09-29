@@ -1,7 +1,7 @@
 reset
-set terminal png
+set terminal svg background "white"
 
-set ou "C:/Users/Suparnajit2005/Documents/GitHub/SEC-lab/GNU-plot/Lab-files/Output/1/Q_vi_ou.png"
+set ou "C:/Users/Suparnajit2005/Documents/GitHub/SEC-lab/GNU-plot/Lab-files/Output/1/Q_vi_ou.svg"
 
 
 f(x)=2*x**3 + 9*x - 11
