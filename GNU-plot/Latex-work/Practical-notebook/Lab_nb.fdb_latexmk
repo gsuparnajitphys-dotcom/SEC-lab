@@ -1,10 +1,10 @@
 # Fdb version 4
-["pdflatex"] 1790712224.1044 "/home/suparnajit2005/GitHub/SEC-lab/GNU-plot/Latex-work/Practical-notebook/Lab_nb.tex" "Lab_nb.pdf" "Lab_nb" 1790712225.57578 0
+["pdflatex"] 1790712395.43616 "/home/suparnajit2005/GitHub/SEC-lab/GNU-plot/Latex-work/Practical-notebook/Lab_nb.tex" "Lab_nb.pdf" "Lab_nb" 1790712395.98876 0
   "/etc/texmf/web2c/texmf.cnf" 1789964256.52617 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/home/suparnajit2005/GitHub/SEC-lab/GNU-plot/Lab-files/Output/1/Q_xiv_ou.svg" 1790712037.1545 24907 8ee46777b1211b42826779ec3ecdf2ea ""
   "/home/suparnajit2005/GitHub/SEC-lab/GNU-plot/Lab-files/Output/1/Q_xx_ou.svg" 1790710935.25244 55557 d2785a7727ef2fbc4a6d657419cd26f6 ""
   "/home/suparnajit2005/GitHub/SEC-lab/GNU-plot/Lab-files/Output/1/Q_xxi_ou.svg" 1790709064.76236 53055 9142d721817e34e47797408de345ce0c ""
-  "/home/suparnajit2005/GitHub/SEC-lab/GNU-plot/Latex-work/Practical-notebook/Lab_nb.tex" 1790712223.59342 5990 c46a22fc2af3fcd6b69547984e69de54 ""
+  "/home/suparnajit2005/GitHub/SEC-lab/GNU-plot/Latex-work/Practical-notebook/Lab_nb.tex" 1790712395.28865 5990 c46a22fc2af3fcd6b69547984e69de54 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -101,9 +101,9 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1769369718 41603 27f93b3067076450172040dcd57ca8b3 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1790597228 5541477 3118940318599480888143717dd32d64 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1790597379 3640624 c9ead9e94d60905d2342c36d2dc746f0 ""
-  "Lab_nb.aux" 1790712225.39009 967 c3e2ffd7e143b06524f4063343e5985b "pdflatex"
-  "Lab_nb.tex" 1790712223.59342 5990 c46a22fc2af3fcd6b69547984e69de54 ""
-  "Lab_nb.toc" 1790712225.39009 126 fdfe5c2d36129533b746a6033414db71 "pdflatex"
+  "Lab_nb.aux" 1790712395.93531 967 c3e2ffd7e143b06524f4063343e5985b "pdflatex"
+  "Lab_nb.tex" 1790712395.28865 5990 c46a22fc2af3fcd6b69547984e69de54 ""
+  "Lab_nb.toc" 1790712395.93531 126 fdfe5c2d36129533b746a6033414db71 "pdflatex"
   "svg-inkscape/Q_xiv_ou_svg-tex.pdf" 1790712044.07346 12784 9418c65ad0178d85225446c11e49b849 ""
   "svg-inkscape/Q_xiv_ou_svg-tex.pdf_tex" 1790712044.07484 6257 ae04ce56bf8647b5e520347cd8af80d2 ""
   "svg-inkscape/Q_xx_ou_svg-tex.pdf" 1790711020.10748 22893 8e57b80a3643b6ea170a5d2c0d34c1f1 ""
