@@ -56,21 +56,21 @@
     \put(0,0){\includegraphics[width=\unitlength,page=1]{Q_xxi_ou_svg-tex.pdf}}%
     \put(0.07893333,0.0895){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}-4\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=2]{Q_xxi_ou_svg-tex.pdf}}%
-    \put(0.07893333,0.17375){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}-3\end{tabular}}}}%
+    \put(0.07893333,0.16625){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}-3\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=3]{Q_xxi_ou_svg-tex.pdf}}%
-    \put(0.07893333,0.258){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}-2\end{tabular}}}}%
+    \put(0.07893333,0.243){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}-2\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=4]{Q_xxi_ou_svg-tex.pdf}}%
-    \put(0.07893333,0.34225){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}-1\end{tabular}}}}%
+    \put(0.07893333,0.31975){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}-1\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=5]{Q_xxi_ou_svg-tex.pdf}}%
-    \put(0.07893333,0.4265){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
+    \put(0.07893333,0.3965){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=6]{Q_xxi_ou_svg-tex.pdf}}%
-    \put(0.07893333,0.51073333){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}1\end{tabular}}}}%
+    \put(0.07893333,0.47323333){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}1\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=7]{Q_xxi_ou_svg-tex.pdf}}%
-    \put(0.07893333,0.59498333){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}2\end{tabular}}}}%
+    \put(0.07893333,0.54998333){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}2\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=8]{Q_xxi_ou_svg-tex.pdf}}%
-    \put(0.07893333,0.67923333){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}3\end{tabular}}}}%
+    \put(0.07893333,0.62673333){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}3\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=9]{Q_xxi_ou_svg-tex.pdf}}%
-    \put(0.07893333,0.76348333){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}4\end{tabular}}}}%
+    \put(0.07893333,0.70348333){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}4\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=10]{Q_xxi_ou_svg-tex.pdf}}%
     \put(0.09291667,0.0595){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}-10\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=11]{Q_xxi_ou_svg-tex.pdf}}%
@@ -82,13 +82,14 @@
     \put(0,0){\includegraphics[width=\unitlength,page=14]{Q_xxi_ou_svg-tex.pdf}}%
     \put(0.95803333,0.0595){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}10\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=15]{Q_xxi_ou_svg-tex.pdf}}%
-    \put(0.84515,0.73348333){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}f1(x)\end{tabular}}}}%
+    \put(0.84515,0.67348333){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}f1(x)\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=16]{Q_xxi_ou_svg-tex.pdf}}%
-    \put(0.84515,0.70348333){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}f2(x)\end{tabular}}}}%
+    \put(0.84515,0.64348333){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}f2(x)\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=17]{Q_xxi_ou_svg-tex.pdf}}%
-    \put(0.84515,0.67348333){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}f3(x)\end{tabular}}}}%
+    \put(0.84515,0.61348333){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}f3(x)\end{tabular}}}}%
     \put(0,0){\includegraphics[width=\unitlength,page=18]{Q_xxi_ou_svg-tex.pdf}}%
-    \put(0.03196667,0.43298333){\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}y values\end{tabular}}}}}%
-    \put(0.52546667,0.0145){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}x values\end{tabular}}}}%
+    \put(0.03196667,0.40298333){\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}y-values\end{tabular}}}}}%
+    \put(0.52546667,0.0145){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}x-values\end{tabular}}}}%
+    \put(0.52546667,0.74848333){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Function plots\end{tabular}}}}%
   \end{picture}%
 \endgroup%

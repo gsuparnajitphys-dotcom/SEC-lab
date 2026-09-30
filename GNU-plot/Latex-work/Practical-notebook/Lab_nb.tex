@@ -63,23 +63,24 @@ f_1(x) = \coth(x) - \frac{1}{x}, \quad f_2(x) = e^{-\sin(x)}, \quad f_3(x) = x|x
 
 \begin{lstlisting}[language=gnuplot]
 reset
-set term png
-set ou "C:/Users/Suparnajit2005/Documents/GitHub/SEC-lab/GNU-plot/Lab-files/Output/1/Q_xxi_ou.png"
+set term svg background "white"
+set ou "/home/suparnajit2005/GitHub/SEC-lab/GNU-plot/Lab-files/Output/1/Q_xxi_ou.svg"
 
+set title "Function plots"
 set grid
 set xzeroaxis linestyle 1 lc "black"
 set yzeroaxis linestyle 1 lc "black"
 set xrange [-10:10]
 set yrange [-4:4]
-set xlabel "x values" 
-set ylabel "y values"
+set xlabel "x-values"
+set ylabel "y-values"
 set samples 1000
 
 f1(x)=(1/(tanh(x)))-(1/x)
 f2(x)=exp(-sin(x))
 f3(x)=x*abs(x)
 
-plot f1(x) lw 2 lc "#5f0f40" dt 1 , f2(x) lw 2 lc "#fb8b24" dt 2, f3(x) lw 2 lc "#9a031e" dt 3
+plot f1(x) lw 1 lc "#5f0f40" dt 1, f2(x) lw 2 lc "#fb8b24" dt 2, f3(x) lw 3 lc "#9a031e" dt 3
 
 \end{lstlisting}
 
@@ -129,7 +130,7 @@ f2(x)=exp(-x/2)
 f3(x)=12.34*(x**(5/3))
 
 set samples 1000
-plot f1(x) lw 2 dt 1 lc "#780000" , f2(x) lw 2 dt 2 lc "#c1121f" , f3(x) lw 2 dt 3 lc "#003049"
+plot f1(x) lw 1 dt 1 lc "#780000", f2(x) lw 2 dt 2 lc "#c1121f", f3(x) lw 3 dt 3 lc "#003049"
 
 \end{lstlisting}
 
@@ -217,18 +218,21 @@ $$2x \sin 2x, \quad \frac{1}{2}x \sinh \left(\frac{x}{2}\right)$$
 \begin{lstlisting}[language=gnuplot]
 reset
 set term svg background "white"
-set ou "C:/Users/Suparnajit2005/Documents/GitHub/SEC-lab/GNU-plot/Lab-files/Output/1/Q_xvi_ou.svg"
+set ou "/home/suparnajit2005/GitHub/SEC-lab/GNU-plot/Lab-files/Output/1/Q_xvi_ou.svg"
 
 set grid
 set xzeroaxis linestyle 1 lc "black"
 set yzeroaxis linestyle 1 lc "black"
 set xrange [-pi:pi]
 set yrange [-5:5]
+set xtics 0.5
+set xlabel "x values"
+set ylabel "y values"
 
-f1(x)=2*sin(2*x)
+f1(x)=2*x*sin(2*x)
 f2(x)=(x/2)*sinh(x/2)
 
-plot f1(x) lc "#9a031e" lw 2,f2(x) lc "#0f4c5c" lw 2
+plot f1(x) lc "#9a031e" lw 2, f2(x) lc "#0f4c5c" lw 3
 \end{lstlisting}
 
 \vspace{10 pt}
