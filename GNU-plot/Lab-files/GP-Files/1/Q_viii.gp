@@ -1,6 +1,6 @@
 reset
 set terminal svg background "white"
-set ou "C:/Users/Suparnajit2005/Documents/GitHub/SEC-lab/GNU-plot/Lab-files/Output/1/Q_viii_ou.svg"
+set ou "Lab-files/Output/1/Q_viii_ou.svg"
 
 set grid
 
@@ -18,6 +18,6 @@ set ylabel "jerk function"
 
 set samples 10000
 
-f(x)=(x>=-3 && x<=2)?(x**2):(x>2)?(x):(-x)
+f(x)=(x<=-3)?(-x):(x<=2)?(x**2):(x)
 
 plot f(x) lc rgb "#B22222" lw 2 

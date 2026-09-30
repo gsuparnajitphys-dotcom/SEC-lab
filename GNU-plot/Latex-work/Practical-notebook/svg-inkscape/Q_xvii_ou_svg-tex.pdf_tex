@@ -1,0 +1,93 @@
+%% Creator: Inkscape 1.4.3 (0d15f75042, 2025-12-25), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'Q_xvii_ou_svg-tex.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{450bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.8)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{Q_xvii_ou_svg-tex.pdf}}%
+    \put(0.04893333,0.0535){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{Q_xvii_ou_svg-tex.pdf}}%
+    \put(0.04893333,0.13475){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{Q_xvii_ou_svg-tex.pdf}}%
+    \put(0.04893333,0.216){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}2\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{Q_xvii_ou_svg-tex.pdf}}%
+    \put(0.04893333,0.29725){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}3\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{Q_xvii_ou_svg-tex.pdf}}%
+    \put(0.04893333,0.3785){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}4\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{Q_xvii_ou_svg-tex.pdf}}%
+    \put(0.04893333,0.45973333){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}5\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{Q_xvii_ou_svg-tex.pdf}}%
+    \put(0.04893333,0.54098333){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}6\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{Q_xvii_ou_svg-tex.pdf}}%
+    \put(0.04893333,0.62223333){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}7\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{Q_xvii_ou_svg-tex.pdf}}%
+    \put(0.04893333,0.70348333){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}8\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{Q_xvii_ou_svg-tex.pdf}}%
+    \put(0.06291667,0.0235){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{Q_xvii_ou_svg-tex.pdf}}%
+    \put(0.2121,0.0235){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0.5\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{Q_xvii_ou_svg-tex.pdf}}%
+    \put(0.36128333,0.0235){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}1\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{Q_xvii_ou_svg-tex.pdf}}%
+    \put(0.51048333,0.0235){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}1.5\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{Q_xvii_ou_svg-tex.pdf}}%
+    \put(0.65966667,0.0235){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=15]{Q_xvii_ou_svg-tex.pdf}}%
+    \put(0.80885,0.0235){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2.5\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=16]{Q_xvii_ou_svg-tex.pdf}}%
+    \put(0.95803333,0.0235){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}3\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=17]{Q_xvii_ou_svg-tex.pdf}}%
+    \put(0.84515,0.67348333){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}f(x)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=18]{Q_xvii_ou_svg-tex.pdf}}%
+    \put(0.51046667,0.74848333){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}Polynomials of x\end{tabular}}}}%
+  \end{picture}%
+\endgroup%

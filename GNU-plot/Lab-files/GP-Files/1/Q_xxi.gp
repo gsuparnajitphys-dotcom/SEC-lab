@@ -1,6 +1,6 @@
 reset
 set term svg background "white"
-set ou "/home/suparnajit2005/GitHub/SEC-lab/GNU-plot/Lab-files/Output/1/Q_xxi_ou.svg"
+set ou "Lab-files/Output/1/Q_xxi_ou.svg"
 
 set title "Function plots"
 set grid
@@ -23,5 +23,4 @@ f3(x)=x*abs(x)
 
 
 plot f1(x) lw 1 lc "#5f0f40" dt 1, f2(x) lw 2 lc "#fb8b24" dt 2, f3(x) lw 3 lc "#9a031e" dt 3
-
 

@@ -1,6 +1,6 @@
 reset
 set term svg background "white"
-set ou "C:/Users/Suparnajit2005/Documents/GitHub/SEC-lab/GNU-plot/Lab-files/Output/1/Q_xvii_ou.svg"
+set ou "Lab-files/Output/1/Q_xvii_ou.svg"
 
 
 
@@ -20,7 +20,6 @@ set ytics 1
 f(x) = (x<1)?(x**2) : (x>=1 && x<=2)?(x) : (x>2)?((x**3)/4):NaN
 
 plot f(x) lc "#780116" lw 2
-
 
 
 

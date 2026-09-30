@@ -1,10 +1,8 @@
 reset 
 set term svg background "white"
-set ou "C:/Users/Suparnajit2005/Documents/GitHub/SEC-lab/GNU-plot/Lab-files/Output/1/Q_xviii_ou.svg"
+set ou "Lab-files/Output/1/Q_xviii_ou.svg"
 
 
-
-set title ""
 
 set grid
 
@@ -24,6 +22,4 @@ f2(x) =(x>-1 && x<1)?((x**2)*tanh(x)):NaN
 f3(x) =(x<-1)?((-1/x)*exp(-x)):NaN
 
 plot f1(x) lw 2 lc "#8d0801" , f2(x) lw 2.5 lc "#f4d58d" , f3(x) lw 2 lc "#001427" 
-
-
 

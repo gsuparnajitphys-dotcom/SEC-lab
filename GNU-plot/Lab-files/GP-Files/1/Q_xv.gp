@@ -1,6 +1,6 @@
 reset
 set term svg background "white"
-set ou "C:/Users/Suparnajit2005/Documents/GitHub/SEC-lab/GNU-plot/Lab-files/Output/1/Q_xv_ou.svg"
+set ou "Lab-files/Output/1/Q_xv_ou.svg"
 
 
 
@@ -24,4 +24,3 @@ set ytics 1
 y(x)=x*sin(3*x)
 
 plot y(x) lc "orange" lw 2
-

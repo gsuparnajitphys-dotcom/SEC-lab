@@ -1,10 +1,9 @@
 reset
 set terminal svg background "white"
 
-set ou "C:/Users/Suparnajit2005/Documents/GitHub/SEC-lab/GNU-plot/Lab-files/Output/1/Q_ii_ou.png"
+set ou "Lab-files/Output/1/Q_ii_ou.svg"
 
 set xrange [-12:12]
-set yrange [-100:100]
 
 set xzeroaxis linetype 1 lc "black"
 set yzeroaxis linetype 1 lc "black"

@@ -1,7 +1,7 @@
 reset
 set terminal svg background "white"
 
-set ou "C:/Users/Suparnajit2005/Documents/GitHub/SEC-lab/GNU-plot/Lab-files/Output/1/Q_vi_ou.svg"
+set ou "Lab-files/Output/1/Q_vi_ou.svg"
 
 
 f(x)=2*x**3 + 9*x - 11
@@ -21,4 +21,3 @@ set ylabel "new function"
 
 
 plot f(x) lw 2 lc "orange"
-

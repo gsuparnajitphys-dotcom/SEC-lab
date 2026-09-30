@@ -63,8 +63,8 @@ f_1(x) = \coth(x) - \frac{1}{x}, \quad f_2(x) = e^{-\sin(x)}, \quad f_3(x) = x|x
 
 \begin{lstlisting}[language=gnuplot]
 reset
-set term svg background "white"
-set ou "/home/suparnajit2005/GitHub/SEC-lab/GNU-plot/Lab-files/Output/1/Q_xxi_ou.svg"
+set terminal svg background "white"
+set output "Lab-files/Output/1/Q_xxi_ou.svg"
 
 set title "Function plots"
 set grid
@@ -101,7 +101,7 @@ plot f1(x) lw 1 lc "#5f0f40" dt 1, f2(x) lw 2 lc "#fb8b24" dt 2, f3(x) lw 3 lc "
 \newpage
 \subsection*{Question 2}
 \addcontentsline{toc}{subsection}{Question 2}
-Plot the following functions for $0 \le x \le \pi$ on the same graph using GNUPLOT. Set $1000$ samples.Mark each curve with different line style and line widths. Label x-axis and y-axis as 'x-values' and 'y-values' respectively. Set the title of the plot 'Function plots'. Save the plot in a suitable format.
+Plot the following functions for $0 \le x \le \pi$ on the same graph using GNUPLOT. Set $1000$ samples. Mark each curve with different line style and line widths. Label x-axis and y-axis as 'x-values' and 'y-values' respectively. Set the title of the plot 'Function plots'. Save the plot in a suitable format.
 \[
 f_1(x) = \sin^2(\sqrt{x}), \quad f_2(x) = e^{-x/2}, \quad f_3(x) = 12.34x^{5/3}
 \]
@@ -111,8 +111,8 @@ f_1(x) = \sin^2(\sqrt{x}), \quad f_2(x) = e^{-x/2}, \quad f_3(x) = 12.34x^{5/3}
 \vspace{10pt}
 \begin{lstlisting}[language=gnuplot]
 reset
-set term svg background "white"
-set ou "/home/suparnajit2005/GitHub/SEC-lab/GNU-plot/Lab-files/Output/1/Q_xx_ou.svg"
+set terminal svg background "white"
+set output "Lab-files/Output/1/Q_xx_ou.svg"
 
 set title "Function plots"
 set grid
@@ -165,8 +165,8 @@ Set the range of $x$ values from $-3$ to $+3$ and the range of $y$ values from $
 
 \begin{lstlisting}[language=gnuplot]
 reset
-set term svg background "white"
-set ou "/home/suparnajit2005/GitHub/SEC-lab/GNU-plot/Lab-files/Output/1/Q_xiv_ou.svg"
+set terminal svg background "white"
+set output "Lab-files/Output/1/Q_xiv_ou.svg"
 
 set grid
 
@@ -218,8 +218,8 @@ $$2x \sin 2x, \quad \frac{1}{2}x \sinh \left(\frac{x}{2}\right)$$
 % --- GNUPLOT Code Area (Blank) ---
 \begin{lstlisting}[language=gnuplot]
 reset
-set term svg background "white"
-set ou "/home/suparnajit2005/GitHub/SEC-lab/GNU-plot/Lab-files/Output/1/Q_xvi_ou.svg"
+set terminal svg background "white"
+set output "Lab-files/Output/1/Q_xvi_ou.svg"
 
 set grid
 set xzeroaxis linestyle 1 lc "black"
@@ -246,4 +246,123 @@ plot f1(x) lc "#9a031e" lw 2, f2(x) lc "#0f4c5c" lw 3
     \includesvg[width=\textwidth]{/home/suparnajit2005/GitHub/SEC-lab/GNU-plot/Lab-files/Output/1/Q_xvi_ou.svg} 
     \caption{$2x \sin 2x, \quad \frac{1}{2}x \sinh \left(\frac{x}{2}\right)$}
 \end{figure}
+
+\newpage
+\subsection*{Question 5}
+\addcontentsline{toc}{subsection}{Question 5}
+
+\noindent \textbf{Problem Set 1 (iii).} Plot $\sin(x)$ and $2\sin(-x)$ simultaneously on the same plot within the range $-3\pi$ to $3\pi$. Use the system-defined value of $3\pi$ as \texttt{3*pi}. Label the $x$-axis as ``x values'' and the $y$-axis as ``standing wave''. Save the output plot in a file.
+
+\vspace{10pt}
+\noindent \textbf{Sol:} The GNU-Plot code for the solution of this problem is given below.
+
+\begin{lstlisting}[language=gnuplot]
+reset
+set terminal svg background "white"
+set output "Lab-files/Output/1/Q_iii_ou.svg"
+
+set grid
+set xzeroaxis linetype 1 lc "black"
+set yzeroaxis linetype 1 lc "black"
+set xrange [-3*pi:3*pi]
+set yrange [-3:3]
+set xlabel "x values"
+set ylabel "standing wave"
+
+plot sin(x) lc "orchid4" lw 2,2*sin(-x) lw 2
+\end{lstlisting}
+
+\vspace{10pt}
+\noindent The output plot is given in the figure below.
+
+\begin{figure}[htbp]
+    \centering
+    \includesvg[width=\textwidth]{/home/suparnajit2005/GitHub/SEC-lab/GNU-plot/Lab-files/Output/1/Q_iii_ou.svg}
+    \caption{The functions $\sin(x)$ and $2\sin(-x)$ plotted over $-3\pi \le x \le 3\pi$.}
+\end{figure}
+
+\newpage
+\subsection*{Question 6}
+\addcontentsline{toc}{subsection}{Question 6}
+
+\noindent \textbf{Problem Set 1 (xiii).} Define the following piecewise function:
+\[
+f(x)=
+\begin{cases}
+x\cos x, & x<0,\\
+x^2+3x, & 0\le x\le 1,\\
+\ln x+4, & x>1.
+\end{cases}
+\]
+Plot it for $-3\le x\le 3$ and $-2\le y\le 5$. Show both axes and set the title to ``Continuous function without derivative at all points''. Save the plot in a file.
+
+\vspace{10pt}
+\noindent \textbf{Sol:} The GNU-Plot code for the solution of this problem is given below.
+
+\begin{lstlisting}[language=gnuplot]
+reset
+set terminal svg background "white"
+set output "Lab-files/Output/1/Q_xiii_ou.svg"
+
+set title "Continuous function without derivative at all points"
+set grid
+set xzeroaxis linestyle 1 lc "black"
+set yzeroaxis linestyle 1 lc "black"
+set xrange [-3:3]
+set yrange [-2:5]
+
+f(x)=(x<0)?(x*cos(x)):(x>=0 && x<=1)?(x**2 + 3*x):(x>1)?(log(x)+4):NaN
+
+plot f(x) lc "#ee6c4d" lw 2
+\end{lstlisting}
+
+\vspace{10pt}
+\noindent The output plot is given in the figure below.
+
+\begin{figure}[htbp]
+    \centering
+    \includesvg[width=\textwidth]{/home/suparnajit2005/GitHub/SEC-lab/GNU-plot/Lab-files/Output/1/Q_xiii_ou.svg}
+    \caption{A continuous piecewise function with changes in derivative.}
+\end{figure}
+
+\newpage
+\subsection*{Question 7}
+\addcontentsline{toc}{subsection}{Question 7}
+
+\noindent \textbf{Problem Set 1 (xii).} Plot $\dfrac{\sin x}{x}$, $\dfrac{\sinh x}{x}$, and $y=1$ on the same graph. Set the $x$-range from $-\pi$ to $+\pi$ and the $y$-range from $0$ to $5$. Show the $y$-axis, set the title to ``Plot of different functions of x'', and label the axes ``x values'' and ``y values''. Use different line widths for all three curves and save the plot in a file.
+\vspace{10pt}
+\noindent \textbf{Sol:} The GNU-Plot code for the solution of this problem is given below.
+
+\begin{lstlisting}[language=gnuplot]
+reset
+set terminal svg background "white"
+set output "Lab-files/Output/1/Q_xii_ou.svg"
+
+set grid
+set title "Plot of different functions of x"
+set xrange [-pi:pi]
+set yrange [0:5]
+set xtics 0.5
+set ytics 1
+set xlabel "x values"
+set ylabel "y values"
+set xzeroaxis linestyle 1 lc "black"
+set yzeroaxis linestyle 1 lc "black"
+
+y1(x)=(x==0)?1:sin(x)/x
+y2(x)=(x==0)?1:sinh(x)/x
+y3(x)=1
+
+plot y1(x) lc "#6F1D1B" lw 1, y2(x) lc "#fb8500" lw 2, y3(x) lc "#f94144" lw 3
+\end{lstlisting}
+
+\vspace{10pt}
+\noindent The output plot is given in the figure below.
+
+\begin{figure}[htbp]
+    \centering
+    \includesvg[width=\textwidth]{/home/suparnajit2005/GitHub/SEC-lab/GNU-plot/Lab-files/Output/1/Q_xii_ou.svg}
+    \caption{The functions $\dfrac{\sin x}{x}$, $\dfrac{\sinh x}{x}$, and $y=1$.}
+\end{figure}
+
 \end{document}

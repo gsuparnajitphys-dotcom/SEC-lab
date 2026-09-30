@@ -1,6 +1,6 @@
 reset
 set term svg background "white"
-set ou "/home/suparnajit2005/GitHub/SEC-lab/GNU-plot/Lab-files/Output/1/Q_xx_ou.svg"
+set ou "Lab-files/Output/1/Q_xx_ou.svg"
 
 
 
@@ -29,7 +29,6 @@ f3(x)=12.34*(x**(5/3))
 set samples 1000
 
 plot f1(x) lw 1 dt 1 lc "#780000", f2(x) lw 2 dt 2 lc "#c1121f", f3(x) lw 3 dt 3 lc "#003049"
-
 
 
 

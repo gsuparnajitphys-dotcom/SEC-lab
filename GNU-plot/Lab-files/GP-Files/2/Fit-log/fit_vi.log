@@ -1,0 +1,37 @@
+
+
+*******************************************************************************
+Wed Sep 30 18:38:50 2026
+
+
+FIT:    data read from "Lab-files/Data/2/Q_vi.txt" using 1:2
+        format = x:z
+        x range restricted to [-3.00000 : 3.00000]
+        #datapoints = 5
+        residuals are weighted equally (unit weight)
+
+function used for fitting: y(x)
+	y(x)=m*x+c
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   m             c            
+   0 2.2018000000e+00   0.00e+00  2.00e+00    1.000000e+00  -2.000000e+00
+   3 2.6489357670e-02  -9.59e-01  2.00e-03    1.329314e+00  -2.058104e+00
+
+After 3 iterations the fit converged.
+final sum of squares of residuals : 0.0264894
+rel. change during last iteration : -9.59098e-06
+
+degrees of freedom    (FIT_NDF)                        : 3
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.0939669
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.00882979
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+m               = 1.32931          +/- 0.02098      (1.579%)
+c               = -2.0581          +/- 0.04213      (2.047%)
+
+correlation matrix of the fit parameters:
+                m      c      
+m               1.000 
+c              -0.070  1.000 

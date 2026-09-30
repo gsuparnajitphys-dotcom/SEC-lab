@@ -1,6 +1,6 @@
 reset
 set term svg background "white"
-set ou "/home/suparnajit2005/GitHub/SEC-lab/GNU-plot/Lab-files/Output/1/Q_xvi_ou.svg"
+set ou "Lab-files/Output/1/Q_xvi_ou.svg"
 
 
 

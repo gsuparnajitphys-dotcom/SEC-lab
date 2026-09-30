@@ -1,7 +1,7 @@
 reset
 set terminal svg background "white"
 
-set ou "C:/Users/Suparnajit2005/Documents/GitHub/SEC-lab/GNU-plot/Lab-files/Output/1/Q_vii_ou.svg"
+set ou "Lab-files/Output/1/Q_vii_ou.svg"
 
 
 f(x)=cos(x)-(0.5)*x
@@ -21,4 +21,3 @@ set ylabel "cos(x)-0.5x"
 
 
 plot f(x) lw 2 lc "light-salmon"
-

@@ -1,10 +1,10 @@
 reset
 set term svg background "white"
-set ou "C:/Users/Suparnajit2005/Documents/GitHub/SEC-lab/GNU-plot/Lab-files/Output/1/Q_xix_ou.svg"
+set ou "Lab-files/Output/1/Q_xix_ou.svg"
 
 
 
-set title "Piecewise continuous function"
+set title "Piece-wise continuous functions"
 
 set grid
 
@@ -23,8 +23,6 @@ h(x)=(x<-1)?(abs(x)*exp(x)):NaN
 
 
 plot f(x) lw 2 lc "#e63946" , g(x) lw 2 lc "#457b9d" , h(x) lw 2 lc "#1d3557"
-
-
 
 
 
