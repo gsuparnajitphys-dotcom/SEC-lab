@@ -1,6 +1,6 @@
 \newpage
-\section*{Question <QUESTION_NUMBER>}
-\addcontentsline{toc}{section}{Question <QUESTION_NUMBER>}
+\subsection*{<QUESTION_NUMBER>}
+\addcontentsline{toc}{subsection}{Question <QUESTION_NUMBER>}
 
 % --- Problem Statement ---
 <PROBLEM_STATEMENT_TEXT>

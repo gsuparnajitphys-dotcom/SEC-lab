@@ -49,8 +49,10 @@
 %Question (1:xxi)
 
 \newpage
-\section*{Question 1}
-\addcontentsline{toc}{section}{Question 1}
+\section*{Section 1}
+\addcontentsline{toc}{section}{Section 1}
+\subsection*{Question 1}
+\addcontentsline{toc}{subsection}{Question 1}
 
 Plot the following functions for $-10 \le x \le 10$ on the same graph using GNUPLOT. Set $1000$ samples. Take the range of $y$-values from $-4$ to $+4$. Mark each curve with different line styles and line widths. Label $x$-axis and $y$-axis as \texttt{'x-values'} and \texttt{'y-values'} respectively. Set the title of the plot as \texttt{'Function plots'}. Save the plot in a suitable format.
 \[
@@ -87,7 +89,7 @@ plot f1(x) lw 2 lc "#5f0f40" dt 1 , f2(x) lw 2 lc "#fb8b24" dt 2, f3(x) lw 2 lc 
 
 \begin{figure}[htbp]
     \centering
-    \includesvg[width=0.8\textwidth]{/home/suparnajit2005/GitHub/SEC-lab/GNU-plot/Lab-files/Output/1/Q_xxi_ou.svg} 
+    \includesvg[width=\textwidth]{/home/suparnajit2005/GitHub/SEC-lab/GNU-plot/Lab-files/Output/1/Q_xxi_ou.svg} 
     \caption{$f_1(x) = \coth(x)- \frac{1}{x}$ , $f_2(x) = e^{-\sin(x)}$
     , $f_3(x) = x|x|$}
     \label{fig:gnuplot_output}
@@ -102,9 +104,10 @@ Plot the following functions for $0 \le x \le \pi$ on the same graph using GNUPL
 \[
 f_1(x) = \sin^2(\sqrt{x}), \quad f_2(x) = e^{-x/2}, \quad f_3(x) = 12.34x^{5/3}
 \]
-\newline
+\vspace{10pt}
+
 \noindent \textbf{Sol:} The GNU-Plot code for the solution of this problem is given below.
-\newline
+\vspace{10pt}
 \begin{lstlisting}[language=gnuplot]
 reset
 set term svg background "white"
@@ -136,7 +139,7 @@ plot f1(x) lw 2 dt 1 lc "#780000" , f2(x) lw 2 dt 2 lc "#c1121f" , f3(x) lw 2 dt
 
 \begin{figure}[htbp]
     \centering
-    \includesvg[width=0.8\textwidth]{/home/suparnajit2005/GitHub/SEC-lab/GNU-plot/Lab-files/Output/1/Q_xx_ou.svg} 
+    \includesvg[width=\textwidth]{/home/suparnajit2005/GitHub/SEC-lab/GNU-plot/Lab-files/Output/1/Q_xx_ou.svg} 
     \caption{$f_1(x) = \sin^2(\sqrt{x})$ , $f_2(x) = e^{-x/2}$ , $f_3(x) = 12.34x^{5/3}$ }
     
 \end{figure}
@@ -189,8 +192,53 @@ plot f1(x) lc "#9b2226" lw 2 , f2(x) lc "#bb3e03" lw 2 , f3(x) lc "#ee9b00" lw 2
 
 \begin{figure}[htbp]
     \centering
-    \includesvg[width=0.8\textwidth]{/home/suparnajit2005/GitHub/SEC-lab/GNU-plot/Lab-files/Output/1/Q_xiv_ou.svg} 
+    \includesvg[width=\textwidth]{/home/suparnajit2005/GitHub/SEC-lab/GNU-plot/Lab-files/Output/1/Q_xiv_ou.svg} 
     \caption{Plot of the piecewise continuous functions $f_1(x)$, $f_2(x)$, and $f_3(x)$}
 \end{figure}
 
+
+\newpage
+\subsection*{Question 4}
+\addcontentsline{toc}{subsection}{Question 4}
+
+% --- Problem Statement ---
+Plot
+
+$$2x \sin 2x, \quad \frac{1}{2}x \sinh \left(\frac{x}{2}\right)$$
+
+\noindent on the same graph. The line width of the two curves to be different. Set the range of $x$ values from $-\pi$ to $+\pi$ and the range of $y$ values from $-5$ to $5$. Show both the axes on the plot. Ticks of $x$ axis will be at interval of $0.5$. The label of $x$ and $y$ axis to be "x values" and "y values" respectively. Store the plot in a file and print it.
+
+
+\noindent \textbf{Sol:} The GNU-Plot code for the solution of this problem is given below.
+
+\vspace{10pt}
+
+% --- GNUPLOT Code Area (Blank) ---
+\begin{lstlisting}[language=gnuplot]
+reset
+set term svg background "white"
+set ou "C:/Users/Suparnajit2005/Documents/GitHub/SEC-lab/GNU-plot/Lab-files/Output/1/Q_xvi_ou.svg"
+
+set grid
+set xzeroaxis linestyle 1 lc "black"
+set yzeroaxis linestyle 1 lc "black"
+set xrange [-pi:pi]
+set yrange [-5:5]
+
+f1(x)=2*sin(2*x)
+f2(x)=(x/2)*sinh(x/2)
+
+plot f1(x) lc "#9a031e" lw 2,f2(x) lc "#0f4c5c" lw 2
+\end{lstlisting}
+
+\vspace{10 pt}
+
+\noindent The output plot is given in the figure below.
+
+% --- Output Plot ---
+\begin{figure}[htbp]
+    \centering
+    \includesvg[width=\textwidth]{/home/suparnajit2005/GitHub/SEC-lab/GNU-plot/Lab-files/Output/1/Q_xvi_ou.svg} 
+    \caption{$2x \sin 2x, \quad \frac{1}{2}x \sinh \left(\frac{x}{2}\right)$}
+\end{figure}
 \end{document}
