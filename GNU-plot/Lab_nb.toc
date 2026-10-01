@@ -1,5 +1,0 @@
-\contentsline {section}{Section 1}{4}{}%
-\contentsline {subsection}{Question 1}{4}{}%
-\contentsline {subsection}{Question 2}{6}{}%
-\contentsline {subsection}{Question 3}{8}{}%
-\contentsline {subsection}{Question 4}{10}{}%
