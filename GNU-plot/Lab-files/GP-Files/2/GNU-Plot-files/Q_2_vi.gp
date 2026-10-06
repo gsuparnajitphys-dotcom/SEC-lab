@@ -18,5 +18,5 @@ m=1
 
 fit y(x) "Lab-files/Data/2/Q_vi.txt" using 1:2 via m,c
 
-plot "Lab-files/Data/2/Q_vi.txt" using 1:2 with p ps 1.5 lc "#f25c54" , y(x) lw 2 lc "#f79d65"
-
+plot "Lab-files/Data/2/Q_vi.txt" using 1:2 with p ps 1.5 lc "#f25c54" title "Data points", \
+     y(x) lw 2 lc "#f79d65" title "Fitted line"

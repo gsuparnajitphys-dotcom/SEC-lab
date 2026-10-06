@@ -10,7 +10,13 @@
 
 \usepackage{listings}
 \usepackage{xcolor}
+\usepackage{float}
 \definecolor{codebackground}{HTML}{FFE6A7}
+\definecolor{terminalbackground}{HTML}{300A24}
+\definecolor{terminaltext}{HTML}{EEEEEC}
+\definecolor{terminalgreen}{HTML}{8AE234}
+\definecolor{terminalcyan}{HTML}{34E2E2}
+\definecolor{terminalpink}{HTML}{F5A9B8}
 
 % 1. Define Gnuplot language syntax
 \lstdefinelanguage{gnuplot}{
@@ -23,6 +29,11 @@
     morecomment=[l]{\#},
     morestring=[b]",
     morestring=[b]'
+}
+
+\lstdefinelanguage{fitlog}{
+    sensitive=true,
+    morekeywords={Final, set, of, parameters, Asymptotic, Standard, Error}
 }
 
 % 2. Define the visual theme for your code blocks
@@ -40,6 +51,36 @@
     breaklines=true,                 
     frame=none,                    
     backgroundcolor=\color{codebackground}
+}
+
+\lstdefinestyle{fitlog}{
+    language=fitlog,
+    basicstyle=\ttfamily\footnotesize\color{terminaltext},
+    keywordstyle=\color{terminalgreen}\bfseries,
+    commentstyle=\color{terminalcyan},
+    numbers=none,
+    showstringspaces=false,
+    keepspaces=true,
+    breaklines=true,
+    columns=fullflexible,
+    frame=single,
+    framerule=0.4pt,
+    rulecolor=\color{terminalbackground},
+    backgroundcolor=\color{terminalbackground}
+}
+
+\lstdefinestyle{datafile}{
+    language={},
+    basicstyle=\ttfamily\footnotesize\color{terminalpink},
+    numbers=none,
+    showstringspaces=false,
+    keepspaces=true,
+    breaklines=true,
+    columns=fullflexible,
+    frame=single,
+    framerule=0.4pt,
+    rulecolor=\color{terminalbackground},
+    backgroundcolor=\color{terminalbackground}
 }
 
 
@@ -364,6 +405,341 @@ plot y1(x) lc "#6F1D1B" lw 1, y2(x) lc "#fb8500" lw 2, y3(x) lc "#f94144" lw 3
     \centering
     \includesvg[width=\textwidth]{/home/suparnajit2005/GitHub/SEC-lab/GNU-plot/Lab-files/Output/1/Q_xii_ou.svg}
     \caption{The functions $\dfrac{\sin x}{x}$, $\dfrac{\sinh x}{x}$, and $y=1$.}
+\end{figure}
+
+\newpage
+\section*{Section 2}
+\addcontentsline{toc}{section}{Section 2}
+
+\subsection*{Question 1}
+\addcontentsline{toc}{subsection}{Question 1}
+\noindent\textbf{Problem Set 2 (i).} Fit the data with $y=mx+c$ over $-4\leq x\leq8$. Plot the data and fitted line, choosing the $y$-range so the intercept $c$ is visible on the $y$-axis. Report $m$ and $c$.
+\begin{table}[H]
+\centering
+\caption{Data for Problem Set 2 (i).}
+\begin{tabular}{|r|r|}
+\hline
+$x$ & $y$\\
+\hline
+-2.7 & -15.07\\
+\hline
+-1.5 & -9.5\\
+\hline
+1.4 & 3.72\\
+\hline
+3.3 & 12.5\\
+\hline
+6.1 & 25.2\\
+\hline
+\end{tabular}
+\end{table}
+\noindent\textbf{Data file contents:}
+\lstinputlisting[style=datafile]{../../Lab-files/Data/2/Q_i.txt}
+\noindent\textbf{Sol:} The fitted line and data points are shown below; the fit results follow the plot.
+\lstinputlisting[language=gnuplot]{../../Lab-files/GP-Files/2/GNU-Plot-files/Q_2_i.gp}
+\begin{figure}[H]
+    \centering
+    \includesvg[width=\textwidth]{../../Lab-files/Output/2/Q_2_i_ou.svg}
+    \caption{Linear fit for Problem Set 2 (i).}
+\end{figure}
+\noindent\textbf{Fit log (parameter estimates and standard errors):}
+\lstinputlisting[style=fitlog,firstline=29,lastline=32]{../../Lab-files/GP-Files/2/Fit-log/fit_i.log}
+
+\newpage
+\subsection*{Question 2}
+\addcontentsline{toc}{subsection}{Question 2}
+\noindent\textbf{Problem Set 2 (ii).} Fit the data with $y=mx+c$ over $-7\leq x\leq7$. Plot the points and fitted line, show the $y$-axis, and choose the $y$-range so the intercept $c$ is visible on it. Report $m$ and $c$.
+\begin{table}[H]
+\centering
+\caption{Data for Problem Set 2 (ii).}
+\begin{tabular}{|r|r|}
+\hline
+$x$ & $y$\\
+\hline
+-5.1 & 21.8\\
+\hline
+-3.4 & 16.12\\
+\hline
+-0.5 & 7.05\\
+\hline
+1.57 & 0.42\\
+\hline
+6.2 & -14.2\\
+\hline
+\end{tabular}
+\end{table}
+\noindent\textbf{Data file contents:}
+\lstinputlisting[style=datafile]{../../Lab-files/Data/2/Q_ii.txt}
+\noindent\textbf{Sol:} The data and fitted line are plotted below; the fit results follow the plot.
+\lstinputlisting[language=gnuplot]{../../Lab-files/GP-Files/2/GNU-Plot-files/Q_2_ii.gp}
+\begin{figure}[H]
+    \centering
+    \includesvg[width=\textwidth]{../../Lab-files/Output/2/Q_2_ii_ou.svg}
+    \caption{Linear fit for Problem Set 2 (ii).}
+\end{figure}
+\noindent\textbf{Fit log (parameter estimates and standard errors):}
+\lstinputlisting[style=fitlog,firstline=29,lastline=32]{../../Lab-files/GP-Files/2/Fit-log/fit_ii.log}
+
+\newpage
+\subsection*{Question 3}
+\addcontentsline{toc}{subsection}{Question 3}
+\noindent\textbf{Problem Set 2 (iii).} Fit the data with $y=mx+c$ over $0\leq x\leq9$. Plot the points and fitted line, show the $y$-axis, and choose the $y$-range so the intercept $c$ is visible on it. Report $m$ and $c$.
+\begin{table}[H]
+\centering
+\caption{Data for Problem Set 2 (iii).}
+\begin{tabular}{|r|r|}
+\hline
+$x$ & $y$\\
+\hline
+2.1 & -2.5\\
+\hline
+4.6 & 7.7\\
+\hline
+5.7 & 12.17\\
+\hline
+6.6 & 15.9\\
+\hline
+8.2 & 22.4\\
+\hline
+\end{tabular}
+\end{table}
+\noindent\textbf{Data file contents:}
+\lstinputlisting[style=datafile]{../../Lab-files/Data/2/Q_iii.txt}
+\noindent\textbf{Sol:} The data and fitted line are plotted below; the fit results follow the plot.
+\lstinputlisting[language=gnuplot]{../../Lab-files/GP-Files/2/GNU-Plot-files/Q_2_iii.gp}
+\begin{figure}[H]
+    \centering
+    \includesvg[width=\textwidth]{../../Lab-files/Output/2/Q_2_iii_ou.svg}
+    \caption{Linear fit for Problem Set 2 (iii).}
+\end{figure}
+\noindent\textbf{Fit log (parameter estimates and standard errors):}
+\lstinputlisting[style=fitlog,firstline=29,lastline=32]{../../Lab-files/GP-Files/2/Fit-log/fit_iii.log}
+
+\newpage
+\subsection*{Question 4}
+\addcontentsline{toc}{subsection}{Question 4}
+\noindent\textbf{Problem Set 2 (iv).} Fit the data with $f(x)=mx+c$ over $-3\leq x\leq4$. Plot the points and fitted line, show both axes, and choose the $y$-range so the intercept $c$ is visible on the $y$-axis. Report $m$ and $c$.
+\begin{table}[H]
+\centering
+\caption{Data for Problem Set 2 (iv).}
+\begin{tabular}{|r|r|}
+\hline
+$x$ & $y$\\
+\hline
+-2.0 & -4.15\\
+\hline
+-1.3 & -2.40\\
+\hline
+1.8 & 6.60\\
+\hline
+2.5 & 8.98\\
+\hline
+3.6 & 11.94\\
+\hline
+\end{tabular}
+\end{table}
+\noindent\textbf{Data file contents:}
+\lstinputlisting[style=datafile]{../../Lab-files/Data/2/Q_iv.txt}
+\noindent\textbf{Sol:} The data and fitted line are plotted below; the fit results follow the plot.
+\lstinputlisting[language=gnuplot]{../../Lab-files/GP-Files/2/GNU-Plot-files/Q_2_iv.gp}
+\begin{figure}[H]
+    \centering
+    \includesvg[width=\textwidth]{../../Lab-files/Output/2/Q_2_iv_ou.svg}
+    \caption{Linear fit for Problem Set 2 (iv).}
+\end{figure}
+\noindent\textbf{Fit log (parameter estimates and standard errors):}
+\lstinputlisting[style=fitlog,firstline=29,lastline=32]{../../Lab-files/GP-Files/2/Fit-log/fit_iv.log}
+
+\newpage
+\subsection*{Question 5}
+\addcontentsline{toc}{subsection}{Question 5}
+\noindent\textbf{Problem Set 2 (vi).} Fit the data with $f(x)=mx+c$ over $-3\leq x\leq3$. Plot the points and fitted line, show both axes, and choose the $y$-range so the intercept $c$ is visible on the $y$-axis. Report $m$ and $c$.
+\begin{table}[H]
+\centering
+\caption{Data for Problem Set 2 (vi).}
+\begin{tabular}{|r|r|}
+\hline
+$x$ & $y$\\
+\hline
+-2.9 & -5.96\\
+\hline
+-1.4 & -3.81\\
+\hline
+0.8 & -1.10\\
+\hline
+1.7 & 0.21\\
+\hline
+2.5 & 1.30\\
+\hline
+\end{tabular}
+\end{table}
+\noindent\textbf{Data file contents:}
+\lstinputlisting[style=datafile]{../../Lab-files/Data/2/Q_vi.txt}
+\noindent\textbf{Sol:} The data and fitted line are plotted below; the fit results follow the plot.
+\lstinputlisting[language=gnuplot]{../../Lab-files/GP-Files/2/GNU-Plot-files/Q_2_vi.gp}
+\begin{figure}[H]
+    \centering
+    \includesvg[width=\textwidth]{../../Lab-files/Output/2/Q_2_vi_ou.svg}
+    \caption{Linear fit for Problem Set 2 (vi).}
+\end{figure}
+\noindent\textbf{Fit log (parameter estimates and standard errors):}
+\lstinputlisting[style=fitlog,firstline=29,lastline=32]{../../Lab-files/GP-Files/2/Fit-log/fit_vi.log}
+
+\newpage
+\subsection*{Question 6}
+\addcontentsline{toc}{subsection}{Question 6}
+\noindent\textbf{Problem Set 2 (vii).} Fit the data with $f(x)=ax^2+b$ over $-3\leq x\leq3$ and $0\leq y\leq16$. Plot the points and fitted curve together, use the title \textit{Polynomial fit}, and report $a$ and $b$.
+\begin{table}[H]
+\centering
+\caption{Data for Problem Set 2 (vii).}
+\begin{tabular}{|r|r|}
+\hline
+$x$ & $y$\\
+\hline
+-2.8 & 14.65\\
+\hline
+-1.2 & 5.81\\
+\hline
+0.7 & 4.48\\
+\hline
+1.8 & 8.33\\
+\hline
+2.9 & 15.56\\
+\hline
+\end{tabular}
+\end{table}
+\noindent\textbf{Data file contents:}
+\lstinputlisting[style=datafile]{../../Lab-files/Data/2/Q_vii.txt}
+\noindent\textbf{Sol:} The data and fitted curve are plotted below; the fit results follow the plot.
+\lstinputlisting[language=gnuplot]{../../Lab-files/GP-Files/2/GNU-Plot-files/Q_2_vii.gp}
+\begin{figure}[H]
+    \centering
+    \includesvg[width=\textwidth]{../../Lab-files/Output/2/Q_2_vii_ou.svg}
+    \caption{Polynomial fit for Problem Set 2 (vii).}
+\end{figure}
+\noindent\textbf{Fit log (parameter estimates and standard errors):}
+\lstinputlisting[style=fitlog,firstline=29,lastline=32]{../../Lab-files/GP-Files/2/Fit-log/fit_vii.log}
+
+\newpage
+\subsection*{Question 7}
+\addcontentsline{toc}{subsection}{Question 7}
+\noindent\textbf{Problem Set 2 (ix).} Fit the data with $f(x)=x^a$ and report $a$. Plot the data with the fitted function, title the plot \textit{Data fitting}, and label the axes $x$ and $f(x)$.
+\begin{table}[H]
+\centering
+\caption{Data for Problem Set 2 (ix).}
+\begin{tabular}{|r|r|}
+\hline
+$x$ & $f(x)$\\
+\hline
+0.0 & 0.0\\
+\hline
+0.2 & 0.006\\
+\hline
+0.4 & 0.053\\
+\hline
+0.6 & 0.195\\
+\hline
+0.8 & 0.49\\
+\hline
+1.0 & 1.0\\
+\hline
+1.2 & 1.792\\
+\hline
+1.4 & 2.935\\
+\hline
+1.6 & 4.5\\
+\hline
+1.8 & 6.56\\
+\hline
+2.0 & 9.19\\
+\hline
+\end{tabular}
+\end{table}
+\noindent\textbf{Data file contents:}
+\lstinputlisting[style=datafile]{../../Lab-files/Data/2/Q_ix.txt}
+\noindent\textbf{Sol:} The fitted power curve is plotted with the data points below; the fit result follows the plot.
+\lstinputlisting[language=gnuplot]{../../Lab-files/GP-Files/2/GNU-Plot-files/Q_2_ix.gp}
+\begin{figure}[H]
+    \centering
+    \includesvg[width=\textwidth]{../../Lab-files/Output/2/Q_2_ix_ou.svg}
+    \caption{Power fit for Problem Set 2 (ix).}
+\end{figure}
+\noindent\textbf{Fit log (parameter estimate and standard error):}
+\lstinputlisting[style=fitlog,firstline=28,lastline=30]{../../Lab-files/GP-Files/2/Fit-log/fit_ix.log}
+
+\newpage
+\section*{Section 3}
+\addcontentsline{toc}{section}{Section 3}
+
+\subsection*{Question 1}
+\addcontentsline{toc}{subsection}{Question 1}
+\noindent\textbf{Problem Set 3 (i).} Show the polar plots of $\sin^3(t)$ and $\cos^2(2t)$. Label the axes ``t value'' and ``the range'', place ``polar plot'' at $(0,-0.7)$, and show the vertical axis.
+\noindent\textbf{Sol:} The corresponding Gnuplot program and output are below.
+\lstinputlisting[language=gnuplot]{../../Lab-files/GP-Files/3/Q_3_i.gp}
+\begin{figure}[htbp]
+    \centering
+    \includesvg[width=\textwidth]{../../Lab-files/Output/3/Q_3_i_ou.svg}
+    \caption{Polar plots of $\sin^3(t)$ and $\cos^2(2t)$.}
+\end{figure}
+
+\newpage
+\subsection*{Question 2}
+\addcontentsline{toc}{subsection}{Question 2}
+\noindent\textbf{Problem Set 3 (ii).} Show the polar plots of $\tan(6t)$ and $\cot(6t)$ over ranges $-20$ to $20$ on both axes. Place the label ``tan(6t), cot(6t)'' at $(4,12)$ and show both axes.
+\noindent\textbf{Sol:} The corresponding Gnuplot program and output are below.
+\lstinputlisting[language=gnuplot]{../../Lab-files/GP-Files/3/Q_3_ii.gp}
+\begin{figure}[htbp]
+    \centering
+    \includesvg[width=\textwidth]{../../Lab-files/Output/3/Q_3_ii_ou.svg}
+    \caption{Polar plots of $\tan(6t)$ and $\cot(6t)$.}
+\end{figure}
+
+\newpage
+\subsection*{Question 3}
+\addcontentsline{toc}{subsection}{Question 3}
+\noindent\textbf{Problem Set 3 (iii).} Plot the parametric curve $x=2\cos^3t$, $y=2\sin^3t$ for $-\pi\leq t\leq\pi$. Label the axes as specified and title the plot ``Astroid''.
+\noindent\textbf{Sol:} The corresponding Gnuplot program and output are below.
+\lstinputlisting[language=gnuplot]{../../Lab-files/GP-Files/3/Q_3_iii.gp}
+\begin{figure}[htbp]
+    \centering
+    \includesvg[width=\textwidth]{../../Lab-files/Output/3/Q_3_iii_ou.svg}
+    \caption{Astroid parametric plot.}
+\end{figure}
+
+\newpage
+\subsection*{Question 4}
+\addcontentsline{toc}{subsection}{Question 4}
+\noindent\textbf{Problem Set 3 (iv).} Plot the polar spiral $r=t$ for $0\leq t\leq6\pi$ using $10000$ samples. Show both axes, label them as specified, and title the plot ``Spiral''.
+\noindent\textbf{Sol:} The corresponding Gnuplot program and output are below.
+\lstinputlisting[language=gnuplot]{../../Lab-files/GP-Files/3/Q_3_iv.gp}
+\begin{figure}[htbp]
+    \centering
+    \includesvg[width=\textwidth]{../../Lab-files/Output/3/Q_3_iv_ou.svg}
+    \caption{Polar spiral $r=t$.}
+\end{figure}
+
+\newpage
+\subsection*{Question 5}
+\addcontentsline{toc}{subsection}{Question 5}
+\noindent\textbf{Problem Set 3 (v).} Plot the parametric curve $x=2\sin t$, $y=2\sin(2t)$ for $-\pi\leq t\leq\pi$, with the specified axis labels and title ``Lissajous Figure''.
+\noindent\textbf{Sol:} The corresponding Gnuplot program and output are below.
+\lstinputlisting[language=gnuplot]{../../Lab-files/GP-Files/3/Q_3_v.gp}
+\begin{figure}[htbp]
+    \centering
+    \includesvg[width=\textwidth]{../../Lab-files/Output/3/Q_3_v_ou.svg}
+    \caption{Lissajous parametric plot.}
+\end{figure}
+
+\newpage
+\subsection*{Question 6}
+\addcontentsline{toc}{subsection}{Question 6}
+\noindent\textbf{Problem Set 3 (vi).} Plot the polar curves $r_1=4+3\cos t$ and $r_2=3+4\cos t$. Label the axes as specified, place ``polar plot'' at $(-6,6)$, and title the plot ``A pair of Limacon''.
+\noindent\textbf{Sol:} The corresponding Gnuplot program and output are below.
+\lstinputlisting[language=gnuplot]{../../Lab-files/GP-Files/3/Q_3_vi.gp}
+\begin{figure}[htbp]
+    \centering
+    \includesvg[width=\textwidth]{../../Lab-files/Output/3/Q_3_vi_ou.svg}
+    \caption{A pair of limaçons.}
 \end{figure}
 
 \end{document}

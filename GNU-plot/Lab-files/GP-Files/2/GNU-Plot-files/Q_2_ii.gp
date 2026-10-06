@@ -20,5 +20,5 @@ c=5
 #Curve fitting
 fit y(x) "Lab-files/Data/2/Q_ii.txt" using 1:2 via m,c
 #Plotting
-plot "Lab-files/Data/2/Q_ii.txt" using 1:2 with p ps 1.5 lc "#fb8b24",y(x) lw 2 lc "#9a031e"
-
+plot "Lab-files/Data/2/Q_ii.txt" using 1:2 with p ps 1.5 lc "#fb8b24" title "Data points", \
+     y(x) lw 2 lc "#9a031e" title "Fitted line"

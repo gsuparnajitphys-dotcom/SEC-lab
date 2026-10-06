@@ -16,6 +16,6 @@ set ylabel "f(x)"
 y(x)=x**a
 
 fit y(x) "Lab-files/Data/2/Q_ix.txt" using 1:2 via a
-plot "Lab-files/Data/2/Q_ix.txt" using 1:2 with p ps 1.5 lc "#a00000" , y(x) lw 2 lc "#f66420"
-
+plot "Lab-files/Data/2/Q_ix.txt" using 1:2 with p ps 1.5 lc "#a00000" title "Data points", \
+     y(x) lw 2 lc "#f66420" title "Fitted curve"
 
