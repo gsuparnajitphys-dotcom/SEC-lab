@@ -1,5 +1,5 @@
 reset
-set terminal svg background "white" 
+set terminal svg background "white"
 set ou "Lab-files/Output/1/Q_ix_ou.svg"
 
 set grid
@@ -21,4 +21,4 @@ f2(x)=(x>-1 && x<2)?(x**2):NaN
 f1(x)=(x>2)?(x):NaN
 
 
-plot f1(x) lc "brown4" lw 2 ,f2(x) lc "orange" lw 2 ,f3(x) lc "dark-violet" lw 2 
+plot f1(x) lc "#0072B2" lw 2 ,f2(x) lc "#D55E00" lw 2 ,f3(x) lc "#009E73" lw 2

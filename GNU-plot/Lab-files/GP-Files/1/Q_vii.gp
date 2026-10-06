@@ -6,7 +6,7 @@ set ou "Lab-files/Output/1/Q_vii_ou.svg"
 
 f(x)=cos(x)-(0.5)*x
 
-set xrange [-20:20] 
+set xrange [-20:20]
 set yrange [-10:12]
 
 set grid
@@ -20,4 +20,4 @@ set xlabel "x value"
 set ylabel "cos(x)-0.5x"
 
 
-plot f(x) lw 2 lc "light-salmon"
+plot f(x) lw 2 lc "#A65E00"

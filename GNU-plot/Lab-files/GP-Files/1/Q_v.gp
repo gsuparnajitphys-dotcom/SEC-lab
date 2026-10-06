@@ -21,4 +21,4 @@ f2(x)=(x>-4 && x<4)?(-x**2):NaN
 f1(x)=(x>4)?(x):NaN
 
 
-plot f1(x) lc "brown4" lw 2 ,f2(x) lc "orange" lw 2 ,f3(x) lc "dark-violet" lw 2 
+plot f1(x) lc "#0072B2" lw 2 ,f2(x) lc "#A65E00" lw 2 ,f3(x) lc "#CC79A7" lw 2

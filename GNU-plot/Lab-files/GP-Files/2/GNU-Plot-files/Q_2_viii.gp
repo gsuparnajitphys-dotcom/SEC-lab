@@ -19,5 +19,5 @@ b=1
 
 fit y(x) "Lab-files/Data/2/Q_viii.txt" using 1:2 via a,b
 
-plot "Lab-files/Data/2/Q_viii.txt" using 1:2 with p ps 1.5 lc "#723d46" title "Data points", \
-     y(x) lw 2 lc "#e26d5c" title "Fitted curve"
+plot "Lab-files/Data/2/Q_viii.txt" using 1:2 with p ps 1.5 lc "#0072B2" title "Data points", \
+     y(x) lw 2 lc "#D55E00" title "Fitted curve"

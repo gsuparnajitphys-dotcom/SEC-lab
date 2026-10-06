@@ -253,16 +253,16 @@
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<use xlink:href='#gpPt0' transform='translate(103.41,353.14) scale(6.75)' color='rgb(148,   0, 211)'/>
-	<use xlink:href='#gpPt0' transform='translate(156.28,319.25) scale(6.75)' color='rgb(148,   0, 211)'/>
-	<use xlink:href='#gpPt0' transform='translate(284.05,238.79) scale(6.75)' color='rgb(148,   0, 211)'/>
-	<use xlink:href='#gpPt0' transform='translate(367.75,185.36) scale(6.75)' color='rgb(148,   0, 211)'/>
-	<use xlink:href='#gpPt0' transform='translate(491.11,108.08) scale(6.75)' color='rgb(148,   0, 211)'/>
-	<use xlink:href='#gpPt0' transform='translate(536.76,36.01) scale(6.75)' color='rgb(148,   0, 211)'/>
+	<use xlink:href='#gpPt0' transform='translate(103.41,353.14) scale(6.75)' color='rgb(  0, 114, 178)'/>
+	<use xlink:href='#gpPt0' transform='translate(156.28,319.25) scale(6.75)' color='rgb(  0, 114, 178)'/>
+	<use xlink:href='#gpPt0' transform='translate(284.05,238.79) scale(6.75)' color='rgb(  0, 114, 178)'/>
+	<use xlink:href='#gpPt0' transform='translate(367.75,185.36) scale(6.75)' color='rgb(  0, 114, 178)'/>
+	<use xlink:href='#gpPt0' transform='translate(491.11,108.08) scale(6.75)' color='rgb(  0, 114, 178)'/>
+	<use xlink:href='#gpPt0' transform='translate(536.76,36.01) scale(6.75)' color='rgb(  0, 114, 178)'/>
 </g>
 	</g>
 	<g id="gnuplot_plot_2" ><title>Fitted line</title>
-<g fill="none" color="#FFFFFF" stroke="rgb(148,   0, 211)" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
+<g fill="none" color="#FFFFFF" stroke="rgb(  0, 114, 178)" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g transform="translate(507.09,57.91)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="end">
@@ -270,7 +270,7 @@
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='rgb(255, 165,   0)'  d='M515.48,54.01 L558.04,54.01 M46.14,389.08 L51.48,385.71 L56.82,382.33 L62.16,378.95 L67.50,375.58 L72.84,372.20
+	<path stroke='rgb(213,  94,   0)'  d='M515.48,54.01 L558.04,54.01 M46.14,389.08 L51.48,385.71 L56.82,382.33 L62.16,378.95 L67.50,375.58 L72.84,372.20
 		L78.18,368.83 L83.52,365.45 L88.86,362.08 L94.20,358.70 L99.54,355.32 L104.88,351.95 L110.22,348.57 L115.56,345.20
 		L120.90,341.82 L126.24,338.45 L131.58,335.07 L136.92,331.70 L142.26,328.32 L147.60,324.94 L152.94,321.57 L158.28,318.19
 		L163.62,314.82 L168.96,311.44 L174.30,308.07 L179.65,304.69 L184.99,301.31 L190.33,297.94 L195.67,294.56 L201.01,291.19

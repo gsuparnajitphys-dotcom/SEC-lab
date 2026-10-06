@@ -1,6 +1,6 @@
-reset 
+reset
 
-set polar 
+set polar
 set terminal svg background "white"
 set ou "Lab-files/Output/3/Q_3_iv_ou.svg"
 
@@ -17,4 +17,4 @@ r(t)=t
 
 set samples 10000
 
-plot r(t) lw 2 lc "#9d0208" 
+plot r(t) lw 2 lc "#CC79A7"

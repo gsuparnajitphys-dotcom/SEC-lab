@@ -20,4 +20,4 @@ set ylabel "y values"
 f1(x)=2*x*sin(2*x)
 f2(x)=(x/2)*sinh(x/2)
 
-plot f1(x) lc "#9a031e" lw 2, f2(x) lc "#0f4c5c" lw 3
+plot f1(x) lc "#D55E00" lw 2, f2(x) lc "#0072B2" lw 3

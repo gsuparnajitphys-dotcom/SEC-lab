@@ -19,4 +19,4 @@ y(x)=(x**2)*sin(x)
 
 
 
-plot y(x) lc "#3b6d54" lw 2
+plot y(x) lc "#D55E00" lw 2

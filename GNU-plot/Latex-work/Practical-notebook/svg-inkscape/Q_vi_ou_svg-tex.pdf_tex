@@ -1,0 +1,104 @@
+%% Creator: Inkscape 1.4.3 (0d15f75042, 2025-12-25), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'Q_vi_ou_svg-tex.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{450bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.8)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{Q_vi_ou_svg-tex.pdf}}%
+    \put(0.12088333,0.0895){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}-7000\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{Q_vi_ou_svg-tex.pdf}}%
+    \put(0.12088333,0.16276667){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}-6000\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{Q_vi_ou_svg-tex.pdf}}%
+    \put(0.12088333,0.23601667){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}-5000\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{Q_vi_ou_svg-tex.pdf}}%
+    \put(0.12088333,0.30928333){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}-4000\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{Q_vi_ou_svg-tex.pdf}}%
+    \put(0.12088333,0.38253333){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}-3000\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{Q_vi_ou_svg-tex.pdf}}%
+    \put(0.12088333,0.4558){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}-2000\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{Q_vi_ou_svg-tex.pdf}}%
+    \put(0.12088333,0.52905){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}-1000\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{Q_vi_ou_svg-tex.pdf}}%
+    \put(0.12088333,0.60231667){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{Q_vi_ou_svg-tex.pdf}}%
+    \put(0.12088333,0.67556667){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}1000\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{Q_vi_ou_svg-tex.pdf}}%
+    \put(0.12088333,0.74883333){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}2000\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{Q_vi_ou_svg-tex.pdf}}%
+    \put(0.13486667,0.0595){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}-15\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{Q_vi_ou_svg-tex.pdf}}%
+    \put(0.21718333,0.0595){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}-12.5\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{Q_vi_ou_svg-tex.pdf}}%
+    \put(0.2995,0.0595){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}-10\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{Q_vi_ou_svg-tex.pdf}}%
+    \put(0.38181667,0.0595){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}-7.5\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=15]{Q_vi_ou_svg-tex.pdf}}%
+    \put(0.46413333,0.0595){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}-5\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=16]{Q_vi_ou_svg-tex.pdf}}%
+    \put(0.54645,0.0595){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}-2.5\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=17]{Q_vi_ou_svg-tex.pdf}}%
+    \put(0.62876667,0.0595){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}0\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=18]{Q_vi_ou_svg-tex.pdf}}%
+    \put(0.71108333,0.0595){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}2.5\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=19]{Q_vi_ou_svg-tex.pdf}}%
+    \put(0.7934,0.0595){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}5\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=20]{Q_vi_ou_svg-tex.pdf}}%
+    \put(0.87571667,0.0595){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}7.5\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=21]{Q_vi_ou_svg-tex.pdf}}%
+    \put(0.95803333,0.0595){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}10\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=22]{Q_vi_ou_svg-tex.pdf}}%
+    \put(0.84515,0.73348333){\makebox(0,0)[rt]{\lineheight{1.25}\smash{\begin{tabular}[t]{r}f(x)\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=23]{Q_vi_ou_svg-tex.pdf}}%
+    \put(0.03196667,0.43298333){\rotatebox{90}{\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}new function\end{tabular}}}}}%
+    \put(0.54645,0.0145){\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}x value\end{tabular}}}}%
+  \end{picture}%
+\endgroup%

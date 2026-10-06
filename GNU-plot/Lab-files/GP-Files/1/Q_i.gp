@@ -20,4 +20,4 @@ set ylabel "new function"
 
 f(x)=x**5 + 2*x**2 + 6
 
-plot f(x) lc "#9a031e" lw 2
+plot f(x) lc "#0072B2" lw 2

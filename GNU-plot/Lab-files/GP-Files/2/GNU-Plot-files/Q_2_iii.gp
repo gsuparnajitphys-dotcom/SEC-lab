@@ -12,7 +12,7 @@ set xrange [0:9]
 
 #Fitting Curve
 
-y(x)= m * x + c 
+y(x)= m * x + c
 
 #Initial Guess
 c=-10
@@ -21,6 +21,6 @@ m=2
 fit y(x) "Lab-files/Data/2/Q_iii.txt" using 1:2 via m,c
 #Plotting
 
-plot "Lab-files/Data/2/Q_iii.txt" using 1:2 with p lc "#e76f51" ps 1.5 title "Data points", \
-     y(x) lw 2 lc "#621708" title "Fitted line"
- 
+plot "Lab-files/Data/2/Q_iii.txt" using 1:2 with p lc "#0072B2" ps 1.5 title "Data points", \
+     y(x) lw 2 lc "#D55E00" title "Fitted line"
+

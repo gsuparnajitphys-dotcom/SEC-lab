@@ -290,19 +290,19 @@
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<use xlink:href='#gpPt0' transform='translate(64.14,405.13) scale(6.75)' color='rgb(114,  61,  70)'/>
-	<use xlink:href='#gpPt0' transform='translate(137.09,379.13) scale(6.75)' color='rgb(114,  61,  70)'/>
-	<use xlink:href='#gpPt0' transform='translate(210.05,348.39) scale(6.75)' color='rgb(114,  61,  70)'/>
-	<use xlink:href='#gpPt0' transform='translate(283.00,311.88) scale(6.75)' color='rgb(114,  61,  70)'/>
-	<use xlink:href='#gpPt0' transform='translate(355.96,268.66) scale(6.75)' color='rgb(114,  61,  70)'/>
-	<use xlink:href='#gpPt0' transform='translate(428.91,217.41) scale(6.75)' color='rgb(114,  61,  70)'/>
-	<use xlink:href='#gpPt0' transform='translate(501.87,156.67) scale(6.75)' color='rgb(114,  61,  70)'/>
-	<use xlink:href='#gpPt0' transform='translate(574.82,84.67) scale(6.75)' color='rgb(114,  61,  70)'/>
-	<use xlink:href='#gpPt0' transform='translate(536.76,72.01) scale(6.75)' color='rgb(114,  61,  70)'/>
+	<use xlink:href='#gpPt0' transform='translate(64.14,405.13) scale(6.75)' color='rgb(  0, 114, 178)'/>
+	<use xlink:href='#gpPt0' transform='translate(137.09,379.13) scale(6.75)' color='rgb(  0, 114, 178)'/>
+	<use xlink:href='#gpPt0' transform='translate(210.05,348.39) scale(6.75)' color='rgb(  0, 114, 178)'/>
+	<use xlink:href='#gpPt0' transform='translate(283.00,311.88) scale(6.75)' color='rgb(  0, 114, 178)'/>
+	<use xlink:href='#gpPt0' transform='translate(355.96,268.66) scale(6.75)' color='rgb(  0, 114, 178)'/>
+	<use xlink:href='#gpPt0' transform='translate(428.91,217.41) scale(6.75)' color='rgb(  0, 114, 178)'/>
+	<use xlink:href='#gpPt0' transform='translate(501.87,156.67) scale(6.75)' color='rgb(  0, 114, 178)'/>
+	<use xlink:href='#gpPt0' transform='translate(574.82,84.67) scale(6.75)' color='rgb(  0, 114, 178)'/>
+	<use xlink:href='#gpPt0' transform='translate(536.76,72.01) scale(6.75)' color='rgb(  0, 114, 178)'/>
 </g>
 	</g>
 	<g id="gnuplot_plot_2" ><title>Fitted curve</title>
-<g fill="none" color="#FFFFFF" stroke="rgb(114,  61,  70)" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
+<g fill="none" color="#FFFFFF" stroke="rgb(  0, 114, 178)" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g transform="translate(507.09,93.91)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="end">
@@ -310,7 +310,7 @@
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='rgb(226, 109,  92)'  d='M515.48,90.01 L558.04,90.01 M64.14,405.11 L69.30,403.42 L74.46,401.70 L79.62,399.97 L84.77,398.21 L89.93,396.43
+	<path stroke='rgb(213,  94,   0)'  d='M515.48,90.01 L558.04,90.01 M64.14,405.11 L69.30,403.42 L74.46,401.70 L79.62,399.97 L84.77,398.21 L89.93,396.43
 		L95.09,394.63 L100.25,392.81 L105.41,390.97 L110.57,389.10 L115.72,387.22 L120.88,385.31 L126.04,383.37 L131.20,381.41
 		L136.36,379.43 L141.52,377.43 L146.67,375.40 L151.83,373.35 L156.99,371.27 L162.15,369.16 L167.31,367.04 L172.47,364.88
 		L177.62,362.70 L182.78,360.49 L187.94,358.26 L193.10,356.00 L198.26,353.71 L203.42,351.39 L208.57,349.05 L213.73,346.68

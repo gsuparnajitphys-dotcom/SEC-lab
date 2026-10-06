@@ -10,7 +10,7 @@ set grid
 set xzeroaxis linestyle 0 lc "black"
 set yzeroaxis linestyle 0 lc "black"
 
-set xrange [-7:7] 
+set xrange [-7:7]
 #Fitting_curve
 y(x)=m * x + c
 
@@ -20,5 +20,5 @@ c=5
 #Curve fitting
 fit y(x) "Lab-files/Data/2/Q_ii.txt" using 1:2 via m,c
 #Plotting
-plot "Lab-files/Data/2/Q_ii.txt" using 1:2 with p ps 1.5 lc "#fb8b24" title "Data points", \
-     y(x) lw 2 lc "#9a031e" title "Fitted line"
+plot "Lab-files/Data/2/Q_ii.txt" using 1:2 with p ps 1.5 lc "#009E73" title "Data points", \
+     y(x) lw 2 lc "#CC79A7" title "Fitted line"

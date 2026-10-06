@@ -14,13 +14,13 @@ set xrange [-4:8]
 
 y(x)=m*x + c
 
-# Initial guess 
+# Initial guess
 m=1
 c=-1
 
 #Fitting the curve
 fit y(x) "Lab-files/Data/2/Q_i.txt" using 1:2 via m,c
 
-#Plotting 
-plot "Lab-files/Data/2/Q_i.txt" using 1:2 with p ps 1.5 title "Data points", \
-     y(x) lw 2 lc "orange" title "Fitted line"
+#Plotting
+plot "Lab-files/Data/2/Q_i.txt" using 1:2 with p ps 1.5 lc "#0072B2" title "Data points", \
+     y(x) lw 2 lc "#D55E00" title "Fitted line"

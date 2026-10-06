@@ -10,7 +10,7 @@ set grid
 set xzeroaxis linestyle 0 lc "black"
 set yzeroaxis linestyle 0 lc "black"
 
-set xrange [0:3] 
+set xrange [0:3]
 set yrange [0:35]
 
 y(x)=a*(x**b)
@@ -20,6 +20,6 @@ b=1
 
 fit y(x) "Lab-files/Data/2/Q_v.txt" using 1:2 via a,b
 
-plot "Lab-files/Data/2/Q_v.txt" using 1:2 with p ps 1.5 lc "#471ca8" title "Data points", \
-     y(x) lw 2 lc "#f24b04" title "Fitted curve"
+plot "Lab-files/Data/2/Q_v.txt" using 1:2 with p ps 1.5 lc "#D55E00" title "Data points", \
+     y(x) lw 2 lc "#0072B2" title "Fitted curve"
 

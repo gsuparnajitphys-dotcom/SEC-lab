@@ -24,4 +24,4 @@ y1(x)=(x==0)?1:sin(x)/x
 y2(x)=(x==0)?1:sinh(x)/x
 y3(x)=1
 
-plot y1(x) lc "#6F1D1B" lw 1, y2(x) lc "#fb8500" lw 2, y3(x) lc "#f94144" lw 3
+plot y1(x) lc "#0072B2" lw 1, y2(x) lc "#D55E00" lw 2, y3(x) lc "#009E73" lw 3

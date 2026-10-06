@@ -20,4 +20,4 @@ set samples 10000
 
 f(x)=(x<=-3)?(-x):(x<=2)?(x**2):(x)
 
-plot f(x) lc rgb "#B22222" lw 2 
+plot f(x) lc rgb "#0072B2" lw 2

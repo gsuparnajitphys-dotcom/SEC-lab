@@ -9,14 +9,14 @@ set grid
 set xzeroaxis linestyle 0 lc "black"
 set yzeroaxis linestyle 0 lc "black"
 
-set xrange [-3:3] 
+set xrange [-3:3]
 
-y(x)=m*x+c 
+y(x)=m*x+c
 
 c=-2
 m=1
 
 fit y(x) "Lab-files/Data/2/Q_vi.txt" using 1:2 via m,c
 
-plot "Lab-files/Data/2/Q_vi.txt" using 1:2 with p ps 1.5 lc "#f25c54" title "Data points", \
-     y(x) lw 2 lc "#f79d65" title "Fitted line"
+plot "Lab-files/Data/2/Q_vi.txt" using 1:2 with p ps 1.5 lc "#009E73" title "Data points", \
+     y(x) lw 2 lc "#D55E00" title "Fitted line"

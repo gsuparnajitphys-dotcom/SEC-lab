@@ -4,19 +4,10 @@
 \usepackage{amsmath}
 \usepackage{graphicx}
 
-\author{Suparnajit Ghosh}
-\title{GNU-Plot-Lab-Notebook}
-
-
 \usepackage{listings}
 \usepackage{xcolor}
 \usepackage{float}
-\definecolor{codebackground}{HTML}{FFE6A7}
-\definecolor{terminalbackground}{HTML}{300A24}
-\definecolor{terminaltext}{HTML}{EEEEEC}
 \definecolor{terminalgreen}{HTML}{8AE234}
-\definecolor{terminalcyan}{HTML}{34E2E2}
-\definecolor{terminalpink}{HTML}{F5A9B8}
 
 % 1. Define Gnuplot language syntax
 \lstdefinelanguage{gnuplot}{
@@ -49,13 +40,12 @@
     tabsize=4,                       
     showstringspaces=false,          
     breaklines=true,                 
-    frame=none,                    
-    backgroundcolor=\color{codebackground}
+    frame=none
 }
 
 \lstdefinestyle{fitlog}{
     language=fitlog,
-    basicstyle=\ttfamily\footnotesize\color{terminaltext},
+    basicstyle=\ttfamily\footnotesize\color{black},
     keywordstyle=\color{terminalgreen}\bfseries,
     commentstyle=\color{terminalcyan},
     numbers=none,
@@ -64,413 +54,165 @@
     breaklines=true,
     columns=fullflexible,
     frame=single,
-    framerule=0.4pt,
-    rulecolor=\color{terminalbackground},
-    backgroundcolor=\color{terminalbackground}
+    framerule=0.4pt
 }
 
 \lstdefinestyle{datafile}{
     language={},
-    basicstyle=\ttfamily\footnotesize\color{terminalpink},
+    basicstyle=\ttfamily\footnotesize\color{magenta},
     numbers=none,
     showstringspaces=false,
     keepspaces=true,
     breaklines=true,
     columns=fullflexible,
     frame=single,
-    framerule=0.4pt,
-    rulecolor=\color{terminalbackground},
-    backgroundcolor=\color{terminalbackground}
+    framerule=0.4pt
 }
 
 
 
 \begin{document}
-\maketitle
-\tableofcontents
+\begin{titlepage}
+    \centering
+    \vspace*{2cm}
+    {\LARGE GNU-Plot-Lab-Notebook\par}
+    \vspace{3cm}
+    \begin{tabular}{rl}
+        Roll Number: & \rule{8cm}{0.4pt}\\[1.5cm]
+        Name: & Mrinmoy Dey\\[1.5cm]
+        Semester: & \rule{8cm}{0.4pt}
+    \end{tabular}
+\end{titlepage}
 %Question (1:xxi)
 
 \newpage
 \section*{Section 1}
 \addcontentsline{toc}{section}{Section 1}
+
 \subsection*{Question 1}
 \addcontentsline{toc}{subsection}{Question 1}
-
-Plot the following functions for $-10 \le x \le 10$ on the same graph using GNUPLOT. Set $1000$ samples. Take the range of $y$-values from $-4$ to $+4$. Mark each curve with different line styles and line widths. Label $x$-axis and $y$-axis as \texttt{'x-values'} and \texttt{'y-values'} respectively. Set the title of the plot as \texttt{'Function plots'}. Save the plot in a suitable format.
+\noindent\textbf{Problem Set 1 (xvii).} Define the piecewise function
 \[
-f_1(x) = \coth(x) - \frac{1}{x}, \quad f_2(x) = e^{-\sin(x)}, \quad f_3(x) = x|x|
+f(x)=\begin{cases}x^2,&x<1,\\x,&1\le x\le2,\\x^3/4,&x>2.\end{cases}
 \]
-\newline
-\textbf{Sol:} The GNU-Plot code for the solution of this problem is given below.
+Plot it for $0\le x\le3$ and $0\le y\le8$, with $x$-ticks every $0.5$, $y$-ticks every $1$, and the title \textit{Polynomials of x}.
 
-\begin{lstlisting}[language=gnuplot]
-reset
-set terminal svg background "white"
-set output "Lab-files/Output/1/Q_xxi_ou.svg"
-
-set title "Function plots"
-set grid
-set xzeroaxis linestyle 1 lc "black"
-set yzeroaxis linestyle 1 lc "black"
-set xrange [-10:10]
-set yrange [-4:4]
-set xlabel "x-values"
-set ylabel "y-values"
-set samples 1000
-
-f1(x)=(1/(tanh(x)))-(1/x)
-f2(x)=exp(-sin(x))
-f3(x)=x*abs(x)
-
-plot f1(x) lw 1 lc "#5f0f40" dt 1, f2(x) lw 2 lc "#fb8b24" dt 2, f3(x) lw 3 lc "#9a031e" dt 3
-
-\end{lstlisting}
-
-\vspace{10 pt}
-
-\noindent The output plot is given in the following page.
-
-\begin{figure}[htbp]
+\noindent\textbf{Sol:} The GNUplot script and its output are shown below.
+\lstinputlisting[language=gnuplot]{../../Lab-files/GP-Files/1/Q_xvii.gp}
+\begin{figure}[H]
     \centering
-    \includesvg[width=\textwidth]{/home/suparnajit2005/GitHub/SEC-lab/GNU-plot/Lab-files/Output/1/Q_xxi_ou.svg} 
-    \caption{$f_1(x) = \coth(x)- \frac{1}{x}$ , $f_2(x) = e^{-\sin(x)}$
-    , $f_3(x) = x|x|$}
-    \label{fig:gnuplot_output}
+    \includesvg[width=\textwidth]{../../Lab-files/Output/1/Q_xvii_ou.svg}
+    \caption{Output for Problem Set 1 (xvii).}
 \end{figure}
-
-%Question (1:xx)
-
 \newpage
+
 \subsection*{Question 2}
 \addcontentsline{toc}{subsection}{Question 2}
-Plot the following functions for $0 \le x \le \pi$ on the same graph using GNUPLOT. Set $1000$ samples. Mark each curve with different line style and line widths. Label x-axis and y-axis as 'x-values' and 'y-values' respectively. Set the title of the plot 'Function plots'. Save the plot in a suitable format.
-\[
-f_1(x) = \sin^2(\sqrt{x}), \quad f_2(x) = e^{-x/2}, \quad f_3(x) = 12.34x^{5/3}
-\]
-\vspace{10pt}
+\noindent\textbf{Problem Set 1 (xv).} Plot $y=x\sin(3x)$ for $-3\le x\le3$ and $-4\le y\le4$. Show both axes, label them \texttt{x values} and \texttt{y values}, and set the $x$- and $y$-tick intervals to $0.5$ and $1$, respectively.
 
-\noindent \textbf{Sol:} The GNU-Plot code for the solution of this problem is given below.
-\vspace{10pt}
-\begin{lstlisting}[language=gnuplot]
-reset
-set terminal svg background "white"
-set output "Lab-files/Output/1/Q_xx_ou.svg"
-
-set title "Function plots"
-set grid
-set xzeroaxis linestyle 1 lc "black"
-set yzeroaxis linestyle 1 lc "black"
-set xrange [0:pi]
-set yrange [0:8]
-set xtics 0.5 
-set ytics 1
-set xlabel "x-values"
-set ylabel "y-values"
-
-f1(x)=sin(sqrt(x))**2
-f2(x)=exp(-x/2)
-f3(x)=12.34*(x**(5/3))
-
-set samples 1000
-plot f1(x) lw 1 dt 1 lc "#780000", f2(x) lw 2 dt 2 lc "#c1121f", f3(x) lw 3 dt 3 lc "#003049"
-
-\end{lstlisting}
-
-\vspace{10 pt}
-
-\noindent The output plot is given in the following page.
-
-\begin{figure}[htbp]
+\noindent\textbf{Sol:} The GNUplot script and its output are shown below.
+\lstinputlisting[language=gnuplot]{../../Lab-files/GP-Files/1/Q_xv.gp}
+\begin{figure}[H]
     \centering
-    \includesvg[width=\textwidth]{/home/suparnajit2005/GitHub/SEC-lab/GNU-plot/Lab-files/Output/1/Q_xx_ou.svg} 
-    \caption{$f_1(x) = \sin^2(\sqrt{x})$ , $f_2(x) = e^{-x/2}$ , $f_3(x) = 12.34x^{5/3}$ }
-    
+    \includesvg[width=\textwidth]{../../Lab-files/Output/1/Q_xv_ou.svg}
+    \caption{Output for Problem Set 1 (xv).}
 \end{figure}
-
 \newpage
 
 \subsection*{Question 3}
 \addcontentsline{toc}{subsection}{Question 3}
+\noindent\textbf{Problem Set 1 (i).} Plot $y=f(x)=x^5+2x^2+6$ for $-10\le x\le10$. Show both axes, label them \texttt{x values} and \texttt{new function}, and set the $x$-tick interval to $2$.
 
-Define three functions in the given range:
-\[
-\begin{aligned}
-f_1(x) &= \ln\left(\frac{1}{x}\right), \quad &x > 0.1, \\
-f_2(x) &= 3x^2 \sin x, \quad &-1 < x < 0.1, \\
-f_3(x) &= \cos 3x, \quad &x < -1.
-\end{aligned}
-\]
-Set the range of $x$ values from $-3$ to $+3$ and the range of $y$ values from $-2.5$ to $+2.5$. Show both the axes on the plot. Set $y$ label ``Piecewise continuous function''. Set ticks of the $y$ axis at an interval of $0.5$. Plot the three functions and store the plot in a file and print it.
-
-\vspace{0.5em}
-\noindent \textbf{Sol:} The GNU-Plot code for the solution of this problem is given below.
-
-\begin{lstlisting}[language=gnuplot]
-reset
-set terminal svg background "white"
-set output "Lab-files/Output/1/Q_xiv_ou.svg"
-
-set grid
-
-set xzeroaxis linestyle 1 lc "black"
-set yzeroaxis linestyle 1 lc "black"
-
-set ytics 0.5
-   
-set xrange [-3:3]
-set yrange [-2.5:2.5]
-
-set ylabel "Piecewise continuous function"
-
-
-f1(x)=(x>0.1)?(log(1/x)):NaN #Not as Number
-f2(x)=(x<0.1 && x>-1)?(3*(x**2)*sin(x)):NaN
-f3(x)=(x<-1)?(cos(3*x)):NaN
-
-plot f1(x) lc "#9b2226" lw 2 , f2(x) lc "#bb3e03" lw 2 , f3(x) lc "#ee9b00" lw 2
-\end{lstlisting}
-
-\vspace{10pt}
-
-\noindent The output plot is given in the figure below.
-
-\begin{figure}[htbp]
+\noindent\textbf{Sol:} The GNUplot script and its output are shown below.
+\lstinputlisting[language=gnuplot]{../../Lab-files/GP-Files/1/Q_i.gp}
+\begin{figure}[H]
     \centering
-    \includesvg[width=\textwidth]{/home/suparnajit2005/GitHub/SEC-lab/GNU-plot/Lab-files/Output/1/Q_xiv_ou.svg} 
-    \caption{Plot of the piecewise continuous functions $f_1(x)$, $f_2(x)$, and $f_3(x)$}
+    \includesvg[width=\textwidth]{../../Lab-files/Output/1/Q_i_ou.svg}
+    \caption{Output for Problem Set 1 (i).}
 \end{figure}
-
-
 \newpage
+
 \subsection*{Question 4}
 \addcontentsline{toc}{subsection}{Question 4}
+\noindent\textbf{Problem Set 1 (xi).} Plot $y=\ln(x^2)$ for $-2\le x\le2$ and $-3\le y\le3$. Show both axes, label them \texttt{x values} and \texttt{y values}, and set the $x$- and $y$-tick intervals to $0.5$ and $1$, respectively.
 
-% --- Problem Statement ---
-Plot
-
-$$2x \sin 2x, \quad \frac{1}{2}x \sinh \left(\frac{x}{2}\right)$$
-
-\noindent on the same graph. The line width of the two curves to be different. Set the range of $x$ values from $-\pi$ to $+\pi$ and the range of $y$ values from $-5$ to $5$. Show both the axes on the plot. Ticks of $x$ axis will be at interval of $0.5$. The label of $x$ and $y$ axis to be "x values" and "y values" respectively. Store the plot in a file and print it.
-
-
-\noindent \textbf{Sol:} The GNU-Plot code for the solution of this problem is given below.
-
-\vspace{10pt}
-
-% --- GNUPLOT Code Area (Blank) ---
-\begin{lstlisting}[language=gnuplot]
-reset
-set terminal svg background "white"
-set output "Lab-files/Output/1/Q_xvi_ou.svg"
-
-set grid
-set xzeroaxis linestyle 1 lc "black"
-set yzeroaxis linestyle 1 lc "black"
-set xrange [-pi:pi]
-set yrange [-5:5]
-set xtics 0.5
-set xlabel "x values"
-set ylabel "y values"
-
-f1(x)=2*x*sin(2*x)
-f2(x)=(x/2)*sinh(x/2)
-
-plot f1(x) lc "#9a031e" lw 2, f2(x) lc "#0f4c5c" lw 3
-\end{lstlisting}
-
-\vspace{10 pt}
-
-\noindent The output plot is given in the figure below.
-
-% --- Output Plot ---
-\begin{figure}[htbp]
+\noindent\textbf{Sol:} The GNUplot script and its output are shown below.
+\lstinputlisting[language=gnuplot]{../../Lab-files/GP-Files/1/Q_xi.gp}
+\begin{figure}[H]
     \centering
-    \includesvg[width=\textwidth]{/home/suparnajit2005/GitHub/SEC-lab/GNU-plot/Lab-files/Output/1/Q_xvi_ou.svg} 
-    \caption{$2x \sin 2x, \quad \frac{1}{2}x \sinh \left(\frac{x}{2}\right)$}
+    \includesvg[width=\textwidth]{../../Lab-files/Output/1/Q_xi_ou.svg}
+    \caption{Output for Problem Set 1 (xi).}
 \end{figure}
-
 \newpage
+
 \subsection*{Question 5}
 \addcontentsline{toc}{subsection}{Question 5}
+\noindent\textbf{Problem Set 1 (vi).} Plot $f(x)=2x^3+9x-11$ for $-15\le x\le10$ and $-7000\le y\le2200$. Show the $y$-axis, label the axes \texttt{x value} and \texttt{new function}, and set the $x$-tick interval to $2.5$.
 
-\noindent \textbf{Problem Set 1 (iii).} Plot $\sin(x)$ and $2\sin(-x)$ simultaneously on the same plot within the range $-3\pi$ to $3\pi$. Use the system-defined value of $3\pi$ as \texttt{3*pi}. Label the $x$-axis as ``x values'' and the $y$-axis as ``standing wave''. Save the output plot in a file.
-
-\vspace{10pt}
-\noindent \textbf{Sol:} The GNU-Plot code for the solution of this problem is given below.
-
-\begin{lstlisting}[language=gnuplot]
-reset
-set terminal svg background "white"
-set output "Lab-files/Output/1/Q_iii_ou.svg"
-
-set grid
-set xzeroaxis linetype 1 lc "black"
-set yzeroaxis linetype 1 lc "black"
-set xrange [-3*pi:3*pi]
-set yrange [-3:3]
-set xlabel "x values"
-set ylabel "standing wave"
-
-plot sin(x) lc "orchid4" lw 2,2*sin(-x) lw 2
-\end{lstlisting}
-
-\vspace{10pt}
-\noindent The output plot is given in the figure below.
-
-\begin{figure}[htbp]
+\noindent\textbf{Sol:} The GNUplot script and its output are shown below.
+\lstinputlisting[language=gnuplot]{../../Lab-files/GP-Files/1/Q_vi.gp}
+\begin{figure}[H]
     \centering
-    \includesvg[width=\textwidth]{/home/suparnajit2005/GitHub/SEC-lab/GNU-plot/Lab-files/Output/1/Q_iii_ou.svg}
-    \caption{The functions $\sin(x)$ and $2\sin(-x)$ plotted over $-3\pi \le x \le 3\pi$.}
+    \includesvg[width=\textwidth]{../../Lab-files/Output/1/Q_vi_ou.svg}
+    \caption{Output for Problem Set 1 (vi).}
 \end{figure}
-
 \newpage
+
 \subsection*{Question 6}
 \addcontentsline{toc}{subsection}{Question 6}
-
-\noindent \textbf{Problem Set 1 (xiii).} Define the following piecewise function:
+\noindent\textbf{Problem Set 1 (v).} Plot the piecewise functions
 \[
-f(x)=
-\begin{cases}
-x\cos x, & x<0,\\
-x^2+3x, & 0\le x\le 1,\\
-\ln x+4, & x>1.
-\end{cases}
+f_1(x)=x\;(x>4),\qquad f_2(x)=-x^2\;(-4<x<4),\qquad f_3(x)=-x\;(x<-4)
 \]
-Plot it for $-3\le x\le 3$ and $-2\le y\le 5$. Show both axes and set the title to ``Continuous function without derivative at all points''. Save the plot in a file.
+for $-10\le x\le10$ and $-4\le y\le10$. Set the $x$-tick interval to $1$ and label the axes \texttt{x values} and \texttt{piecewise continuous functions}.
 
-\vspace{10pt}
-\noindent \textbf{Sol:} The GNU-Plot code for the solution of this problem is given below.
-
-\begin{lstlisting}[language=gnuplot]
-reset
-set terminal svg background "white"
-set output "Lab-files/Output/1/Q_xiii_ou.svg"
-
-set title "Continuous function without derivative at all points"
-set grid
-set xzeroaxis linestyle 1 lc "black"
-set yzeroaxis linestyle 1 lc "black"
-set xrange [-3:3]
-set yrange [-2:5]
-
-f(x)=(x<0)?(x*cos(x)):(x>=0 && x<=1)?(x**2 + 3*x):(x>1)?(log(x)+4):NaN
-
-plot f(x) lc "#ee6c4d" lw 2
-\end{lstlisting}
-
-\vspace{10pt}
-\noindent The output plot is given in the figure below.
-
-\begin{figure}[htbp]
+\noindent\textbf{Sol:} The GNUplot script and its output are shown below.
+\lstinputlisting[language=gnuplot]{../../Lab-files/GP-Files/1/Q_v.gp}
+\begin{figure}[H]
     \centering
-    \includesvg[width=\textwidth]{/home/suparnajit2005/GitHub/SEC-lab/GNU-plot/Lab-files/Output/1/Q_xiii_ou.svg}
-    \caption{A continuous piecewise function with changes in derivative.}
+    \includesvg[width=\textwidth]{../../Lab-files/Output/1/Q_v_ou.svg}
+    \caption{Output for Problem Set 1 (v).}
 \end{figure}
-
 \newpage
+
 \subsection*{Question 7}
 \addcontentsline{toc}{subsection}{Question 7}
+\noindent\textbf{Problem Set 1 (iv).} Plot the piecewise function
+\[
+f(x)=\begin{cases}x,&-2\le x\le2,\\0.5,&\text{otherwise}\end{cases}
+\]
+for $-10\le x\le10$ and $-5\le y\le5$. Set the $x$- and $y$-tick intervals to $2$ and $1$, respectively, and label the axes \texttt{x value} and \texttt{jerk function}.
 
-\noindent \textbf{Problem Set 1 (xii).} Plot $\dfrac{\sin x}{x}$, $\dfrac{\sinh x}{x}$, and $y=1$ on the same graph. Set the $x$-range from $-\pi$ to $+\pi$ and the $y$-range from $0$ to $5$. Show the $y$-axis, set the title to ``Plot of different functions of x'', and label the axes ``x values'' and ``y values''. Use different line widths for all three curves and save the plot in a file.
-\vspace{10pt}
-\noindent \textbf{Sol:} The GNU-Plot code for the solution of this problem is given below.
-
-\begin{lstlisting}[language=gnuplot]
-reset
-set terminal svg background "white"
-set output "Lab-files/Output/1/Q_xii_ou.svg"
-
-set grid
-set title "Plot of different functions of x"
-set xrange [-pi:pi]
-set yrange [0:5]
-set xtics 0.5
-set ytics 1
-set xlabel "x values"
-set ylabel "y values"
-set xzeroaxis linestyle 1 lc "black"
-set yzeroaxis linestyle 1 lc "black"
-
-y1(x)=(x==0)?1:sin(x)/x
-y2(x)=(x==0)?1:sinh(x)/x
-y3(x)=1
-
-plot y1(x) lc "#6F1D1B" lw 1, y2(x) lc "#fb8500" lw 2, y3(x) lc "#f94144" lw 3
-\end{lstlisting}
-
-\vspace{10pt}
-\noindent The output plot is given in the figure below.
-
-\begin{figure}[htbp]
+\noindent\textbf{Sol:} The GNUplot script and its output are shown below.
+\lstinputlisting[language=gnuplot]{../../Lab-files/GP-Files/1/Q_iv.gp}
+\begin{figure}[H]
     \centering
-    \includesvg[width=\textwidth]{/home/suparnajit2005/GitHub/SEC-lab/GNU-plot/Lab-files/Output/1/Q_xii_ou.svg}
-    \caption{The functions $\dfrac{\sin x}{x}$, $\dfrac{\sinh x}{x}$, and $y=1$.}
+    \includesvg[width=\textwidth]{../../Lab-files/Output/1/Q_iv_ou.svg}
+    \caption{Output for Problem Set 1 (iv).}
 \end{figure}
-
 \newpage
 \section*{Section 2}
 \addcontentsline{toc}{section}{Section 2}
 
 \subsection*{Question 1}
 \addcontentsline{toc}{subsection}{Question 1}
-\noindent\textbf{Problem Set 2 (i).} Fit the data with $y=mx+c$ over $-4\leq x\leq8$. Plot the data and fitted line, choosing the $y$-range so the intercept $c$ is visible on the $y$-axis. Report $m$ and $c$.
-\begin{table}[H]
-\centering
-\caption{Data for Problem Set 2 (i).}
-\begin{tabular}{|r|r|}
-\hline
-$x$ & $y$\\
-\hline
--2.7 & -15.07\\
-\hline
--1.5 & -9.5\\
-\hline
-1.4 & 3.72\\
-\hline
-3.3 & 12.5\\
-\hline
-6.1 & 25.2\\
-\hline
-\end{tabular}
-\end{table}
-\noindent\textbf{Data file contents:}
-\lstinputlisting[style=datafile]{../../Lab-files/Data/2/Q_i.txt}
-\noindent\textbf{Sol:} The fitted line and data points are shown below; the fit results follow the plot.
-\lstinputlisting[language=gnuplot]{../../Lab-files/GP-Files/2/GNU-Plot-files/Q_2_i.gp}
-\begin{figure}[H]
-    \centering
-    \includesvg[width=\textwidth]{../../Lab-files/Output/2/Q_2_i_ou.svg}
-    \caption{Linear fit for Problem Set 2 (i).}
-\end{figure}
-\noindent\textbf{Fit log (parameter estimates and standard errors):}
-\lstinputlisting[style=fitlog,firstline=29,lastline=32]{../../Lab-files/GP-Files/2/Fit-log/fit_i.log}
-
-\newpage
-\subsection*{Question 2}
-\addcontentsline{toc}{subsection}{Question 2}
-\noindent\textbf{Problem Set 2 (ii).} Fit the data with $y=mx+c$ over $-7\leq x\leq7$. Plot the points and fitted line, show the $y$-axis, and choose the $y$-range so the intercept $c$ is visible on it. Report $m$ and $c$.
+\noindent\textbf{Problem Set 2 (ii).} Fit the data with $y=mx+c$ over $-7\le x\le7$. Plot the points and fitted line, show the $y$-axis, and choose the $y$-range so $c$ can be read from that axis. Report $m$ and $c$.
 \begin{table}[H]
 \centering
 \caption{Data for Problem Set 2 (ii).}
 \begin{tabular}{|r|r|}
 \hline
-$x$ & $y$\\
-\hline
--5.1 & 21.8\\
-\hline
--3.4 & 16.12\\
-\hline
--0.5 & 7.05\\
-\hline
-1.57 & 0.42\\
-\hline
-6.2 & -14.2\\
-\hline
+$x$ & $y$ \\ \hline
+$-5.1$ & $21.8$ \\ \hline
+$-3.4$ & $16.12$ \\ \hline
+$-0.5$ & $7.05$ \\ \hline
+$1.57$ & $0.42$ \\ \hline
+$6.2$ & $-14.2$ \\ \hline
 \end{tabular}
 \end{table}
 \noindent\textbf{Data file contents:}
 \lstinputlisting[style=datafile]{../../Lab-files/Data/2/Q_ii.txt}
-\noindent\textbf{Sol:} The data and fitted line are plotted below; the fit results follow the plot.
+\noindent\textbf{Sol:} The fitted plot and the parameter estimates with their standard errors are shown below.
 \lstinputlisting[language=gnuplot]{../../Lab-files/GP-Files/2/GNU-Plot-files/Q_2_ii.gp}
 \begin{figure}[H]
     \centering
@@ -479,33 +221,27 @@ $x$ & $y$\\
 \end{figure}
 \noindent\textbf{Fit log (parameter estimates and standard errors):}
 \lstinputlisting[style=fitlog,firstline=29,lastline=32]{../../Lab-files/GP-Files/2/Fit-log/fit_ii.log}
-
 \newpage
-\subsection*{Question 3}
-\addcontentsline{toc}{subsection}{Question 3}
-\noindent\textbf{Problem Set 2 (iii).} Fit the data with $y=mx+c$ over $0\leq x\leq9$. Plot the points and fitted line, show the $y$-axis, and choose the $y$-range so the intercept $c$ is visible on it. Report $m$ and $c$.
+
+\subsection*{Question 2}
+\addcontentsline{toc}{subsection}{Question 2}
+\noindent\textbf{Problem Set 2 (iii).} Fit the data with $y=mx+c$ over $0\le x\le9$. Plot the points and fitted line, show the $y$-axis, and choose the $y$-range so $c$ can be read from that axis. Report $m$ and $c$.
 \begin{table}[H]
 \centering
 \caption{Data for Problem Set 2 (iii).}
 \begin{tabular}{|r|r|}
 \hline
-$x$ & $y$\\
-\hline
-2.1 & -2.5\\
-\hline
-4.6 & 7.7\\
-\hline
-5.7 & 12.17\\
-\hline
-6.6 & 15.9\\
-\hline
-8.2 & 22.4\\
-\hline
+$x$ & $y$ \\ \hline
+$2.1$ & $-2.5$ \\ \hline
+$4.6$ & $7.7$ \\ \hline
+$5.7$ & $12.17$ \\ \hline
+$6.6$ & $15.9$ \\ \hline
+$8.2$ & $22.4$ \\ \hline
 \end{tabular}
 \end{table}
 \noindent\textbf{Data file contents:}
 \lstinputlisting[style=datafile]{../../Lab-files/Data/2/Q_iii.txt}
-\noindent\textbf{Sol:} The data and fitted line are plotted below; the fit results follow the plot.
+\noindent\textbf{Sol:} The fitted plot and the parameter estimates with their standard errors are shown below.
 \lstinputlisting[language=gnuplot]{../../Lab-files/GP-Files/2/GNU-Plot-files/Q_2_iii.gp}
 \begin{figure}[H]
     \centering
@@ -514,33 +250,27 @@ $x$ & $y$\\
 \end{figure}
 \noindent\textbf{Fit log (parameter estimates and standard errors):}
 \lstinputlisting[style=fitlog,firstline=29,lastline=32]{../../Lab-files/GP-Files/2/Fit-log/fit_iii.log}
-
 \newpage
-\subsection*{Question 4}
-\addcontentsline{toc}{subsection}{Question 4}
-\noindent\textbf{Problem Set 2 (iv).} Fit the data with $f(x)=mx+c$ over $-3\leq x\leq4$. Plot the points and fitted line, show both axes, and choose the $y$-range so the intercept $c$ is visible on the $y$-axis. Report $m$ and $c$.
+
+\subsection*{Question 3}
+\addcontentsline{toc}{subsection}{Question 3}
+\noindent\textbf{Problem Set 2 (iv).} Fit the data with $f(x)=mx+c$ over $-3\le x\le4$. Plot the points and fitted line, show both axes, and choose the $y$-range so $c$ can be read from the $y$-axis. Report $m$ and $c$.
 \begin{table}[H]
 \centering
 \caption{Data for Problem Set 2 (iv).}
 \begin{tabular}{|r|r|}
 \hline
-$x$ & $y$\\
-\hline
--2.0 & -4.15\\
-\hline
--1.3 & -2.40\\
-\hline
-1.8 & 6.60\\
-\hline
-2.5 & 8.98\\
-\hline
-3.6 & 11.94\\
-\hline
+$x$ & $y$ \\ \hline
+$-2.0$ & $-4.15$ \\ \hline
+$-1.3$ & $-2.40$ \\ \hline
+$1.8$ & $6.60$ \\ \hline
+$2.5$ & $8.98$ \\ \hline
+$3.6$ & $11.94$ \\ \hline
 \end{tabular}
 \end{table}
 \noindent\textbf{Data file contents:}
 \lstinputlisting[style=datafile]{../../Lab-files/Data/2/Q_iv.txt}
-\noindent\textbf{Sol:} The data and fitted line are plotted below; the fit results follow the plot.
+\noindent\textbf{Sol:} The fitted plot and the parameter estimates with their standard errors are shown below.
 \lstinputlisting[language=gnuplot]{../../Lab-files/GP-Files/2/GNU-Plot-files/Q_2_iv.gp}
 \begin{figure}[H]
     \centering
@@ -549,33 +279,56 @@ $x$ & $y$\\
 \end{figure}
 \noindent\textbf{Fit log (parameter estimates and standard errors):}
 \lstinputlisting[style=fitlog,firstline=29,lastline=32]{../../Lab-files/GP-Files/2/Fit-log/fit_iv.log}
-
 \newpage
+
+\subsection*{Question 4}
+\addcontentsline{toc}{subsection}{Question 4}
+\noindent\textbf{Problem Set 2 (v).} Fit the data with $f(x)=ax^b$ over $0\le x\le3$ and $0\le y\le35$. Plot the points and fitted curve, use the title \textit{Power series fit}, and report $a$ and $b$.
+\begin{table}[H]
+\centering
+\caption{Data for Problem Set 2 (v).}
+\begin{tabular}{|r|r|}
+\hline
+$x$ & $y$ \\ \hline
+$0.5$ & $0.21$ \\ \hline
+$0.83$ & $1.05$ \\ \hline
+$1.16$ & $2.40$ \\ \hline
+$1.82$ & $9.01$ \\ \hline
+$2.81$ & $30.75$ \\ \hline
+\end{tabular}
+\end{table}
+\noindent\textbf{Data file contents:}
+\lstinputlisting[style=datafile]{../../Lab-files/Data/2/Q_v.txt}
+\noindent\textbf{Sol:} The fitted plot and the parameter estimates with their standard errors are shown below.
+\lstinputlisting[language=gnuplot]{../../Lab-files/GP-Files/2/GNU-Plot-files/Q_2_v.gp}
+\begin{figure}[H]
+    \centering
+    \includesvg[width=\textwidth]{../../Lab-files/Output/2/Q_2_v_ou.svg}
+    \caption{Power-series fit for Problem Set 2 (v).}
+\end{figure}
+\noindent\textbf{Fit log (parameter estimates and standard errors):}
+\lstinputlisting[style=fitlog,firstline=29,lastline=32]{../../Lab-files/GP-Files/2/Fit-log/fit_v.log}
+\newpage
+
 \subsection*{Question 5}
 \addcontentsline{toc}{subsection}{Question 5}
-\noindent\textbf{Problem Set 2 (vi).} Fit the data with $f(x)=mx+c$ over $-3\leq x\leq3$. Plot the points and fitted line, show both axes, and choose the $y$-range so the intercept $c$ is visible on the $y$-axis. Report $m$ and $c$.
+\noindent\textbf{Problem Set 2 (vi).} Fit the data with $f(x)=mx+c$ over $-3\le x\le3$. Plot the points and fitted line, show both axes, and choose the $y$-range so $c$ can be read from the $y$-axis. Report $m$ and $c$.
 \begin{table}[H]
 \centering
 \caption{Data for Problem Set 2 (vi).}
 \begin{tabular}{|r|r|}
 \hline
-$x$ & $y$\\
-\hline
--2.9 & -5.96\\
-\hline
--1.4 & -3.81\\
-\hline
-0.8 & -1.10\\
-\hline
-1.7 & 0.21\\
-\hline
-2.5 & 1.30\\
-\hline
+$x$ & $y$ \\ \hline
+$-2.9$ & $-5.96$ \\ \hline
+$-1.4$ & $-3.81$ \\ \hline
+$0.8$ & $-1.10$ \\ \hline
+$1.7$ & $0.21$ \\ \hline
+$2.5$ & $1.30$ \\ \hline
 \end{tabular}
 \end{table}
 \noindent\textbf{Data file contents:}
 \lstinputlisting[style=datafile]{../../Lab-files/Data/2/Q_vi.txt}
-\noindent\textbf{Sol:} The data and fitted line are plotted below; the fit results follow the plot.
+\noindent\textbf{Sol:} The fitted plot and the parameter estimates with their standard errors are shown below.
 \lstinputlisting[language=gnuplot]{../../Lab-files/GP-Files/2/GNU-Plot-files/Q_2_vi.gp}
 \begin{figure}[H]
     \centering
@@ -584,33 +337,27 @@ $x$ & $y$\\
 \end{figure}
 \noindent\textbf{Fit log (parameter estimates and standard errors):}
 \lstinputlisting[style=fitlog,firstline=29,lastline=32]{../../Lab-files/GP-Files/2/Fit-log/fit_vi.log}
-
 \newpage
+
 \subsection*{Question 6}
 \addcontentsline{toc}{subsection}{Question 6}
-\noindent\textbf{Problem Set 2 (vii).} Fit the data with $f(x)=ax^2+b$ over $-3\leq x\leq3$ and $0\leq y\leq16$. Plot the points and fitted curve together, use the title \textit{Polynomial fit}, and report $a$ and $b$.
+\noindent\textbf{Problem Set 2 (vii).} Fit the data with $f(x)=ax^2+b$ over $-3\le x\le3$ and $0\le y\le16$. Plot the points and fitted curve, use the title \textit{Polynomial fit}, and report $a$ and $b$.
 \begin{table}[H]
 \centering
 \caption{Data for Problem Set 2 (vii).}
 \begin{tabular}{|r|r|}
 \hline
-$x$ & $y$\\
-\hline
--2.8 & 14.65\\
-\hline
--1.2 & 5.81\\
-\hline
-0.7 & 4.48\\
-\hline
-1.8 & 8.33\\
-\hline
-2.9 & 15.56\\
-\hline
+$x$ & $y$ \\ \hline
+$-2.8$ & $14.65$ \\ \hline
+$-1.2$ & $5.81$ \\ \hline
+$0.7$ & $4.48$ \\ \hline
+$1.8$ & $8.33$ \\ \hline
+$2.9$ & $15.56$ \\ \hline
 \end{tabular}
 \end{table}
 \noindent\textbf{Data file contents:}
 \lstinputlisting[style=datafile]{../../Lab-files/Data/2/Q_vii.txt}
-\noindent\textbf{Sol:} The data and fitted curve are plotted below; the fit results follow the plot.
+\noindent\textbf{Sol:} The fitted plot and the parameter estimates with their standard errors are shown below.
 \lstinputlisting[language=gnuplot]{../../Lab-files/GP-Files/2/GNU-Plot-files/Q_2_vii.gp}
 \begin{figure}[H]
     \centering
@@ -619,54 +366,38 @@ $x$ & $y$\\
 \end{figure}
 \noindent\textbf{Fit log (parameter estimates and standard errors):}
 \lstinputlisting[style=fitlog,firstline=29,lastline=32]{../../Lab-files/GP-Files/2/Fit-log/fit_vii.log}
-
 \newpage
+
 \subsection*{Question 7}
 \addcontentsline{toc}{subsection}{Question 7}
-\noindent\textbf{Problem Set 2 (ix).} Fit the data with $f(x)=x^a$ and report $a$. Plot the data with the fitted function, title the plot \textit{Data fitting}, and label the axes $x$ and $f(x)$.
+\noindent\textbf{Problem Set 2 (viii).} Fit the data with $f(x)=ae^{bx}$. Plot the points and fitted curve, use the title \textit{Data fitting}, label the axes $x$ and $f(x)$, and report $a$ and $b$.
 \begin{table}[H]
 \centering
-\caption{Data for Problem Set 2 (ix).}
+\caption{Data for Problem Set 2 (viii).}
 \begin{tabular}{|r|r|}
 \hline
-$x$ & $f(x)$\\
-\hline
-0.0 & 0.0\\
-\hline
-0.2 & 0.006\\
-\hline
-0.4 & 0.053\\
-\hline
-0.6 & 0.195\\
-\hline
-0.8 & 0.49\\
-\hline
-1.0 & 1.0\\
-\hline
-1.2 & 1.792\\
-\hline
-1.4 & 2.935\\
-\hline
-1.6 & 4.5\\
-\hline
-1.8 & 6.56\\
-\hline
-2.0 & 9.19\\
-\hline
+$x$ & $f(x)$ \\ \hline
+$-3.0$ & $3.422$ \\ \hline
+$-2.0$ & $4.057$ \\ \hline
+$-1.0$ & $4.808$ \\ \hline
+$0.0$ & $5.7$ \\ \hline
+$1.0$ & $6.756$ \\ \hline
+$2.0$ & $8.008$ \\ \hline
+$3.0$ & $9.492$ \\ \hline
+$4.0$ & $11.251$ \\ \hline
 \end{tabular}
 \end{table}
 \noindent\textbf{Data file contents:}
-\lstinputlisting[style=datafile]{../../Lab-files/Data/2/Q_ix.txt}
-\noindent\textbf{Sol:} The fitted power curve is plotted with the data points below; the fit result follows the plot.
-\lstinputlisting[language=gnuplot]{../../Lab-files/GP-Files/2/GNU-Plot-files/Q_2_ix.gp}
+\lstinputlisting[style=datafile]{../../Lab-files/Data/2/Q_viii.txt}
+\noindent\textbf{Sol:} The fitted plot and the parameter estimates with their standard errors are shown below.
+\lstinputlisting[language=gnuplot]{../../Lab-files/GP-Files/2/GNU-Plot-files/Q_2_viii.gp}
 \begin{figure}[H]
     \centering
-    \includesvg[width=\textwidth]{../../Lab-files/Output/2/Q_2_ix_ou.svg}
-    \caption{Power fit for Problem Set 2 (ix).}
+    \includesvg[width=\textwidth]{../../Lab-files/Output/2/Q_2_viii_ou.svg}
+    \caption{Exponential fit for Problem Set 2 (viii).}
 \end{figure}
-\noindent\textbf{Fit log (parameter estimate and standard error):}
-\lstinputlisting[style=fitlog,firstline=28,lastline=30]{../../Lab-files/GP-Files/2/Fit-log/fit_ix.log}
-
+\noindent\textbf{Fit log (parameter estimates and standard errors):}
+\lstinputlisting[style=fitlog,firstline=28,lastline=31]{../../Lab-files/GP-Files/2/Fit-log/fit_viii.log}
 \newpage
 \section*{Section 3}
 \addcontentsline{toc}{section}{Section 3}

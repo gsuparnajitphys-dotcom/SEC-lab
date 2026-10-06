@@ -1,6 +1,6 @@
-reset 
+reset
 
-set parametric 
+set parametric
 set terminal svg background "white"
 set ou "Lab-files/Output/3/Q_3_iii_ou.svg"
 
@@ -18,4 +18,4 @@ y(t)=2*sin(t)**3
 
 set samples 1000
 
-plot x(t),y(t) lw 2 lc "#dc2f02"
+plot x(t),y(t) lw 2 lc "#009E73"

@@ -11,12 +11,12 @@ set yzeroaxis linestyle 0 lc "black"
 set xrange [-3:3]
 set yrange [0:16]
 
-y(x)=a*x**2+b 
+y(x)=a*x**2+b
 
 a=1
 b=4
 
 fit y(x) "Lab-files/Data/2/Q_vii.txt" using 1:2 via a,b
-plot "Lab-files/Data/2/Q_vii.txt" using 1:2 with p ps 1.5 lc "#2b2d42" title "Data points", \
-     y(x) lw 2 lc "#d90429" title "Fitted curve"
- 
+plot "Lab-files/Data/2/Q_vii.txt" using 1:2 with p ps 1.5 lc "#CC79A7" title "Data points", \
+     y(x) lw 2 lc "#0072B2" title "Fitted curve"
+
