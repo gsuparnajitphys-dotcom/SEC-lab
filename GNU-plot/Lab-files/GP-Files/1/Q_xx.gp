@@ -28,7 +28,7 @@ f3(x)=12.34*(x**(5/3))
 
 set samples 1000
 
-plot f1(x) lw 1 dt 1 lc "#0072B2", f2(x) lw 2 dt 2 lc "#CC79A7", f3(x) lw 3 dt 3 lc "#D55E00"
+plot f1(x) lw 1 dt 1 lc "#332288", f2(x) lw 2 dt 2 lc "#CC6677", f3(x) lw 3 dt 3 lc "#EE7733"
 
 
 

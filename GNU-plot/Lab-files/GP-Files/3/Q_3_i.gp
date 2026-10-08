@@ -12,4 +12,4 @@ set label "polar plot" at 0,-0.7
 set yzeroaxis linestyle 1 lc "black"
 
 set samples 1000
-plot (sin(t))**3 lw 2 lc "#0072B2",cos(2*t)**2 lw 2 lc "#D55E00"
+plot (sin(t))**3 lw 2 lc "#4477AA",cos(2*t)**2 lw 2 lc "#EE7733"

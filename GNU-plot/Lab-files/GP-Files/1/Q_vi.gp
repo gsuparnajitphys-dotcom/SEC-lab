@@ -20,4 +20,4 @@ set xlabel "x value"
 set ylabel "new function"
 
 
-plot f(x) lw 2 lc "#CC79A7"
+plot f(x) lw 2 lc "#CC6677"

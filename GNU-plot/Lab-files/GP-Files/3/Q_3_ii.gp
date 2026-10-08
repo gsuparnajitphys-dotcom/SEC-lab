@@ -19,4 +19,4 @@ set yrange [-20:20]
 
 set samples 1000
 
-plot tan(6*t) lc "#0072B2",(1/tan(6*t)) lc "#D55E00"
+plot tan(6*t) lc "#332288",(1/tan(6*t)) lc "#CC6677"

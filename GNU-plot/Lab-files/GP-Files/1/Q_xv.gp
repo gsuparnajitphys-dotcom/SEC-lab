@@ -23,4 +23,4 @@ set ytics 1
 
 y(x)=x*sin(3*x)
 
-plot y(x) lc "#009E73" lw 2
+plot y(x) lc "#228833" lw 2

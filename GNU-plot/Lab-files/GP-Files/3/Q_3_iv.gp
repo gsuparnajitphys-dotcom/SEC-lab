@@ -17,4 +17,4 @@ r(t)=t
 
 set samples 10000
 
-plot r(t) lw 2 lc "#CC79A7"
+plot r(t) lw 2 lc "#AA3377"

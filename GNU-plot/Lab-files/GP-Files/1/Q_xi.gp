@@ -19,4 +19,4 @@ set yzeroaxis linestyle 1 lc "black"
 
 y(x)=log(x**2)
 
-plot y(x) lc "#D55E00" lw 2
+plot y(x) lc "#EE7733" lw 2

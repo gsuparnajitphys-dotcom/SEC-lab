@@ -22,4 +22,4 @@ f3(x)=-(1+tanh(x))
 
 
 
-plot f1(x) lc "#009E73" lw 1 ,f2(x) lc "#D55E00" lw 2 ,f3(x) lc "#0072B2" lw 3
+plot f1(x) lc "#44AA99" lw 1 ,f2(x) lc "#EE7733" lw 2 ,f3(x) lc "#4477AA" lw 3

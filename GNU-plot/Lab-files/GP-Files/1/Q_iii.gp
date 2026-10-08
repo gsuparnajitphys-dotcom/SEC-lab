@@ -14,4 +14,4 @@ set xlabel "x values"
 set ylabel "standing wave"
 
 
-plot sin(x) lc "#0072B2" lw 2,2*sin(-x) lc "#CC79A7" lw 2
+plot sin(x) lc "#4477AA" lw 2,2*sin(-x) lc "#AA3377" lw 2

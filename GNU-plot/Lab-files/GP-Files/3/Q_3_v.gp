@@ -20,4 +20,4 @@ y(t)=2*sin(2*t)
 
 set samples 1000
 
-plot x(t),y(t) lw 2 lc "#D55E00"
+plot x(t),y(t) lw 2 lc "#EE7733"

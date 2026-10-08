@@ -21,5 +21,5 @@ f1(x) =(x>1)?((1/x)*exp(x)):NaN
 f2(x) =(x>-1 && x<1)?((x**2)*tanh(x)):NaN
 f3(x) =(x<-1)?((-1/x)*exp(-x)):NaN
 
-plot f1(x) lw 2 lc "#0072B2" , f2(x) lw 2.5 lc "#009E73" , f3(x) lw 2 lc "#D55E00"
+plot f1(x) lw 2 lc "#4477AA" , f2(x) lw 2.5 lc "#44AA99" , f3(x) lw 2 lc "#EE7733"
 

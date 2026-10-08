@@ -16,5 +16,5 @@ set yrange [-2:5]
 
 f(x)=(x<0)?(x*cos(x)):(x>=0 && x<=1)?(x**2 + 3*x):(x>1)?(log(x)+4):NaN
 
-plot f(x) lc "#CC79A7" lw 2
+plot f(x) lc "#CC6677" lw 2
 

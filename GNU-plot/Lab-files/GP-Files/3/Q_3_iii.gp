@@ -18,4 +18,4 @@ y(t)=2*sin(t)**3
 
 set samples 1000
 
-plot x(t),y(t) lw 2 lc "#009E73"
+plot x(t),y(t) lw 2 lc "#228833"

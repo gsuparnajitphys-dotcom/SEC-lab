@@ -18,4 +18,4 @@ set ylabel "jerk function"
 
 f(x)=(x>=-2 && x<=2)?(x):0.5
 
-plot f(x) lc "#009E73" lw 2
+plot f(x) lc "#228833" lw 2

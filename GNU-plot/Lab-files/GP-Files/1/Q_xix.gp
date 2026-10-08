@@ -22,7 +22,7 @@ g(x)=(x>=-1 && x<2)?((sin(x))**2):NaN
 h(x)=(x<-1)?(abs(x)*exp(x)):NaN
 
 
-plot f(x) lw 2 lc "#D55E00" , g(x) lw 2 lc "#0072B2" , h(x) lw 2 lc "#009E73"
+plot f(x) lw 2 lc "#EE7733" , g(x) lw 2 lc "#4477AA" , h(x) lw 2 lc "#228833"
 
 
 

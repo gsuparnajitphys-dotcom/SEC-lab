@@ -240,7 +240,7 @@
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="1.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='rgb(213,  94,   0)'  d='M515.48,72.01 L558.04,72.01 M55.75,279.65 L56.27,279.64 L56.79,279.63 L57.31,279.62 L57.83,279.61 L58.35,279.60
+	<path stroke='rgb(238, 119,  51)'  d='M515.48,72.01 L558.04,72.01 M55.75,279.65 L56.27,279.64 L56.79,279.63 L57.31,279.62 L57.83,279.61 L58.35,279.60
 		L58.87,279.59 L59.39,279.58 L59.91,279.57 L60.43,279.56 L60.95,279.55 L61.47,279.55 L61.99,279.54 L62.50,279.53
 		L63.02,279.52 L63.54,279.51 L64.06,279.50 L64.58,279.49 L65.10,279.48 L65.62,279.47 L66.14,279.46 L66.66,279.45
 		L67.18,279.44 L67.70,279.43 L68.22,279.42 L68.74,279.41 L69.26,279.40 L69.78,279.39 L70.30,279.38 L70.82,279.37
@@ -368,7 +368,7 @@
 		L574.30,196.77 L574.82,196.76  '/></g>
 	</g>
 	<g id="gnuplot_plot_2" ><title>f2(x)</title>
-<g fill="none" color="#FFFFFF" stroke="rgb(213,  94,   0)" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
+<g fill="none" color="#FFFFFF" stroke="rgb(238, 119,  51)" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g transform="translate(507.09,93.91)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="end">
@@ -376,7 +376,7 @@
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='rgb(  0, 158, 115)' stroke-dasharray=' 5,8'  d='M515.48,90.01 L558.04,90.01 M55.75,211.48 L56.27,211.02 L56.79,210.55 L57.31,210.07 L57.83,209.57 L58.35,209.06
+	<path stroke='rgb( 34, 136,  51)' stroke-dasharray=' 5,8'  d='M515.48,90.01 L558.04,90.01 M55.75,211.48 L56.27,211.02 L56.79,210.55 L57.31,210.07 L57.83,209.57 L58.35,209.06
 		L58.87,208.53 L59.39,207.99 L59.91,207.44 L60.43,206.87 L60.95,206.28 L61.47,205.68 L61.99,205.06 L62.50,204.42
 		L63.02,203.77 L63.54,203.10 L64.06,202.42 L64.58,201.72 L65.10,201.00 L65.62,200.26 L66.14,199.51 L66.66,198.74
 		L67.18,197.95 L67.70,197.14 L68.22,196.31 L68.74,195.47 L69.26,194.61 L69.78,193.73 L70.30,192.83 L70.82,191.91
@@ -504,7 +504,7 @@
 		L574.30,160.20 L574.82,158.87  '/></g>
 	</g>
 	<g id="gnuplot_plot_3" ><title>f3(x)</title>
-<g fill="none" color="#FFFFFF" stroke="rgb(  0, 158, 115)" stroke-width="3.00" stroke-linecap="butt" stroke-linejoin="miter">
+<g fill="none" color="#FFFFFF" stroke="rgb( 34, 136,  51)" stroke-width="3.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="3.00" stroke-linecap="butt" stroke-linejoin="miter">
 	<g transform="translate(507.09,111.91)" stroke="none" fill="black" font-family="Arial" font-size="12.00"  text-anchor="end">
@@ -512,7 +512,7 @@
 	</g>
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="3.00" stroke-linecap="butt" stroke-linejoin="miter">
-	<path stroke='rgb(  0, 114, 178)' stroke-dasharray='3.0,6.0'  d='M515.48,108.01 L558.04,108.01 M263.38,422.40 L263.59,420.93 L264.11,417.27 L264.63,413.66 L265.14,410.08 L265.66,406.53
+	<path stroke='rgb( 68, 119, 170)' stroke-dasharray='3.0,6.0'  d='M515.48,108.01 L558.04,108.01 M263.38,422.40 L263.59,420.93 L264.11,417.27 L264.63,413.66 L265.14,410.08 L265.66,406.53
 		L266.18,403.03 L266.70,399.56 L267.22,396.12 L267.74,392.73 L268.26,389.37 L268.78,386.05 L269.30,382.76 L269.82,379.51
 		L270.34,376.30 L270.86,373.13 L271.38,369.99 L271.90,366.89 L272.42,363.82 L272.94,360.80 L273.46,357.81 L273.98,354.85
 		L274.50,351.94 L275.02,349.06 L275.54,346.22 L276.06,343.41 L276.58,340.64 L277.10,337.91 L277.61,335.22 L278.13,332.56
@@ -539,7 +539,7 @@
 		L361.79,90.36 L362.31,87.04 L362.83,83.68 L363.35,80.29 L363.87,76.85 L364.39,73.38 L364.91,69.88 L365.43,66.33
 		L365.94,62.75 L366.46,59.14 L366.98,55.48 L367.18,54.01  '/></g>
 	</g>
-<g fill="none" color="#FFFFFF" stroke="rgb(  0, 114, 178)" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
+<g fill="none" color="#FFFFFF" stroke="rgb( 68, 119, 170)" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>
 <g fill="none" color="black" stroke="currentColor" stroke-width="2.00" stroke-linecap="butt" stroke-linejoin="miter">
 </g>

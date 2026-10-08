@@ -19,7 +19,7 @@ set ytics 1
 
 f(x) = (x<1)?(x**2) : (x>=1 && x<=2)?(x) : (x>2)?((x**3)/4):NaN
 
-plot f(x) lc "#CC79A7" lw 2
+plot f(x) lc "#AA3377" lw 2
 
 
 

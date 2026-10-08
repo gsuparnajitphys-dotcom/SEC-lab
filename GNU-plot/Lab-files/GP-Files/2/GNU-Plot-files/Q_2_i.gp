@@ -22,5 +22,5 @@ c=-1
 fit y(x) "Lab-files/Data/2/Q_i.txt" using 1:2 via m,c
 
 #Plotting
-plot "Lab-files/Data/2/Q_i.txt" using 1:2 with p ps 1.5 lc "#0072B2" title "Data points", \
-     y(x) lw 2 lc "#D55E00" title "Fitted line"
+plot "Lab-files/Data/2/Q_i.txt" using 1:2 with p ps 1.5 lc "#4477AA" title "Data points", \
+     y(x) lw 2 lc "#EE7733" title "Fitted line"

@@ -20,4 +20,4 @@ set xlabel "x value"
 set ylabel "cos(x)-0.5x"
 
 
-plot f(x) lw 2 lc "#A65E00"
+plot f(x) lw 2 lc "#4477AA"

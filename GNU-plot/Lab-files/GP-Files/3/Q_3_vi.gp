@@ -20,6 +20,6 @@ r2(t)=3+4*cos(t)
 
 set samples 1000
 
-plot r1(t) lw 2 lc "#0072B2", r2(t) lw 2 lc "#CC79A7"
+plot r1(t) lw 2 lc "#4477AA", r2(t) lw 2 lc "#AA3377"
 
 
